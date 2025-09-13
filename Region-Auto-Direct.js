@@ -1,12 +1,10 @@
-// region-auto-direct.js
-// 功能：根据“当前出口国家”动态把对应地区策略组切到 DIRECT；不在该国则切回该地区的时延优选
-// 触发：挂在 [Script] 的 network-changed（启动/换网都会触发）
-// 作者：@Helge_007 & Gemini（整合修复）
-// 说明：顺序尝试多个 GEO API；首个成功即用；全部失败则保守回退到“全部代理”。
-// 重要：MAP 里的组名/子项名必须与 [Proxy Group] 完全一致（含空格/符号/简繁体）。
+// region-auto-direct.debug.js
+// 作用：按“出口国家”把对应场景组切到 DIRECT，其他地区切回各自的“时延优选”。
+// 版本：Debug Fix v2  — 针对 setSelectPolicy 返回 false 的情况，增加“策略组就绪等待 + 重试 +详细日志”。
+// 触发：network-changed（启动 / 切网 会触发）。
+// 适配：Loon 3.3.3（若你是旧版，API 可能不同）。
 
 /* ===================== 可 配 置 区 ===================== */
-
 const MAP = {
   CN: { group: "大陆场景", direct: "DIRECT",     proxy: "大陆时延优选" },
   HK: { group: "香港场景", direct: "DIRECT",     proxy: "香港时延优选" },
@@ -17,91 +15,105 @@ const MAP = {
   US: { group: "美国场景", direct: "DIRECT",     proxy: "美国时延优选" },
 };
 
-// GEO API（返回两字母 ISO 国家码）。按顺序依次尝试：
 const GEO_URLS = [
-  "https://ipapi.co/country",        // 例如：HK
-  "https://ifconfig.co/country-iso", // 例如：HK
-  "https://api.country.is",          // 例如：{"ip":"x.x.x.x","country":"HK"}
+  "https://ipapi.co/country",         // e.g. HK
+  "https://ifconfig.co/country-iso",  // e.g. HK
+  "https://api.country.is",           // {"ip":"x.x.x.x","country":"HK"}
 ];
 
-// 单次请求超时（毫秒）
-const TIMEOUT_MS = 3000;
+const TIMEOUT_MS   = 3000;      // 单次请求超时
+const DETECT_NODE  = "DIRECT";  // 探测走直连，避免被代理污染
+const NOTIFY       = true;      // 国家变化时通知（首次也会提示）
+const KEY_LAST_CC  = "RegionAutoDirect:last_cc";
 
-// 探测请求的出站节点/策略（建议 DIRECT，避免代理污染出口国判断）
-const DETECT_NODE = "DIRECT";
+// 等待策略组“就绪”的重试参数（解决：脚本在策略组尚未完全装载前就运行导致 setSelectPolicy 失败）
+const WAIT_TOTAL_TRIES = 10;    // 最多重试次数
+const WAIT_INTERVAL_MS = 500;   // 每次间隔（毫秒）
 
-// 是否在“国家变化时”通知（首次成功探测也会提示一次）
-const NOTIFY_ON_CHANGE = true;
+/* ===================== 工 具 函 数 ===================== */
+function isIso2(s){ return typeof s === 'string' && /^[A-Z]{2}$/.test(String(s).trim()); }
 
-// 持久化键：上次国家
-const KEY_LAST_CC = "RegionAutoDirect:last_cc";
+function parseMaybeJson(ccRaw){
+  try { const o = JSON.parse(ccRaw); return o && typeof o.country === 'string' ? o.country.toUpperCase() : ''; }
+  catch { return ''; }
+}
 
-/* ===================== 主 逻 辑 ===================== */
-
-function isIso2(s) { return typeof s === "string" && /^[A-Z]{2}$/.test(String(s).trim()); }
-
-// 切组（幂等）：当前已是目标则跳过，避免多余切换
-function setPolicy(group, target) {
+function getSelectedSafe(group){
   try {
-    const cur = (typeof $config.getSelectedPolicy === "function")
-      ? ($config.getSelectedPolicy(group) || "")
-      : "";
-    if (cur === target) {
-      console.log(`RegionAutoDirect: ${group} 已是 ${target}，跳过`);
-      return;
+    if (typeof $config.getSelectedPolicy === 'function') {
+      // 若策略组不存在，某些版本会返回 undefined / null
+      return $config.getSelectedPolicy(group);
     }
-    if (typeof $config.setSelectPolicy !== "function") {
-      $notification.post("RegionAutoDirect", "API 不可用", "缺少 $config.setSelectPolicy（请检查 Loon 版本）");
-      return;
+  } catch(e) {
+    console.log(`RegionAutoDirect: 读取当前子项异常 (${group}) → ${e}`);
+  }
+  return undefined;
+}
+
+function groupReady(){
+  // 所有 MAP 中的 group 都能被读取到“当前选中项”（不一定有值，但不是 undefined）视为就绪
+  return Object.values(MAP).every(({group}) => typeof getSelectedSafe(group) !== 'undefined');
+}
+
+function waitPoliciesReady(tries = WAIT_TOTAL_TRIES){
+  if (groupReady()) return Promise.resolve(true);
+  if (tries <= 0)   return Promise.resolve(false);
+  return new Promise(res => setTimeout(res, WAIT_INTERVAL_MS))
+    .then(() => waitPoliciesReady(tries - 1));
+}
+
+function setPolicy(group, target){
+  try {
+    // 幂等：如果当前就是目标，直接跳过
+    const cur = getSelectedSafe(group);
+    if (cur === target) { console.log(`RegionAutoDirect: ${group} 已是 ${target}，跳过`); return true; }
+
+    if (typeof $config.setSelectPolicy !== 'function'){
+      $notification.post('RegionAutoDirect', 'API 不可用', '缺少 $config.setSelectPolicy（请检查 Loon 版本）');
+      return false;
     }
     const ok = $config.setSelectPolicy(group, target);
-    console.log(`RegionAutoDirect: 切换 ${group} → ${target}：${ok ? "成功" : "失败"}`);
-    if (!ok) $notification.post("策略切换失败", `${group} → ${target}`, "请核对组名/子项是否与配置一致");
-  } catch (e) {
-    $notification.post("策略切换异常", `${group} → ${target}`, String(e));
+    console.log(`RegionAutoDirect: 切换 ${group} → ${target}：${ok ? '成功' : '失败'}`);
+    if (!ok) {
+      // 提示最常见的三类原因：1) 组名不匹配；2) 子项名不在该组内；3) 组尚未完全装载
+      $notification.post('策略切换失败', `${group} → ${target}`, '可能原因：名称不匹配 / 目标子项不在该组 / 组尚未装载');
+    }
+    return ok;
+  } catch (e){
+    $notification.post('策略切换异常', `${group} → ${target}`, String(e));
+    return false;
   }
 }
 
-// 应用当前国家：本地国场景= DIRECT，其它场景= 各自“时延优选”
-function applyForCountry(cc) {
-  const code = String(cc || "").trim().toUpperCase();
+function applyForCountry(cc){
+  const code = String(cc || '').trim().toUpperCase();
   if (!isIso2(code)) {
-    $notification.post("地区探测失败", "未获取到有效国家码", "已回退为全部代理");
+    $notification.post('地区探测失败', '未获取到有效国家码', '已回退到各地区代理');
     return fallbackToProxy();
   }
 
-  const last = $persistentStore.read(KEY_LAST_CC) || "";
+  const last = $persistentStore.read(KEY_LAST_CC) || '';
   const changed = last && code !== last;
 
-  // ★ 每次都对齐策略（幂等），不要因为国家未变而直接 return
+  // ★ 每次都对齐策略（幂等）
   Object.keys(MAP).forEach(k => {
     const { group, direct, proxy } = MAP[k];
     setPolicy(group, code === k ? direct : proxy);
   });
 
-  if (NOTIFY_ON_CHANGE) {
-    if (!last) $notification.post("出口国家确认", `当前：${code}`, "已根据当前位置初始化各地区策略");
-    else if (changed) $notification.post("出口国家已更新", `${last} → ${code}`, "已按新位置切换各地区策略");
+  if (NOTIFY) {
+    if (!last) $notification.post('出口国家确认', `当前：${code}`, '已根据当前位置初始化各地区策略');
+    else if (changed) $notification.post('出口国家已更新', `${last} → ${code}`, '已按新位置切换各地区策略');
   }
   $persistentStore.write(code, KEY_LAST_CC);
 }
 
-// 全部走代理（安全回退）
-function fallbackToProxy() {
-  console.log("RegionAutoDirect: 全部 API 失败或国家无效 → 回退到各地区代理");
+function fallbackToProxy(){
+  console.log('RegionAutoDirect: API 失败或国家无效 → 回退为各地区代理');
   Object.keys(MAP).forEach(k => setPolicy(MAP[k].group, MAP[k].proxy));
 }
 
-// 解析第三个 API（api.country.is）的返回
-function parseMaybeJson(ccRaw) {
-  try {
-    const obj = JSON.parse(ccRaw);
-    return typeof obj?.country === "string" ? obj.country.toUpperCase() : "";
-  } catch { return ""; }
-}
-
-// 依次探测 GEO_API
-function probe(urls, i = 0) {
+function probe(urls, i = 0){
   if (i >= urls.length) { fallbackToProxy(); return $done(); }
   const url = urls[i];
   console.log(`RegionAutoDirect: 尝试第 ${i + 1} 个 API：${url}`);
@@ -109,24 +121,25 @@ function probe(urls, i = 0) {
   $httpClient.get({ url, timeout: TIMEOUT_MS, node: DETECT_NODE }, (err, resp, data) => {
     const ok = !err && resp && resp.status === 200 && data;
     if (!ok) {
-      console.log(`RegionAutoDirect: 失败：${url} → ${err ? err : "HTTP " + (resp && resp.status)}`);
+      console.log(`RegionAutoDirect: 失败：${url} → ${err ? err : 'HTTP ' + (resp && resp.status)}`);
       return probe(urls, i + 1);
     }
-
     let cc = String(data).trim();
-    // 第 3 个 API 返回 JSON，需要额外解析
-    if (url.includes("api.country.is")) cc = parseMaybeJson(cc);
+    if (url.includes('api.country.is')) cc = parseMaybeJson(cc);
 
-    if (isIso2(cc)) {
-      console.log(`RegionAutoDirect: 成功获取国家码：${cc}`);
-      applyForCountry(cc);
-      return $done();
-    } else {
-      console.log(`RegionAutoDirect: 数据格式不符（${url}）：${String(data).slice(0, 80)}...`);
-      return probe(urls, i + 1);
-    }
+    if (isIso2(cc)) { console.log(`RegionAutoDirect: 成功获取国家码：${cc}`); applyForCountry(cc); return $done(); }
+    console.log(`RegionAutoDirect: 数据格式不符（${url}）：${String(data).slice(0,80)}...`);
+    return probe(urls, i + 1);
   });
 }
 
-console.log("RegionAutoDirect: 脚本启动，开始探测出口国家…");
-probe(GEO_URLS);
+/* ===================== 脚 本 入 口 ===================== */
+console.log('RegionAutoDirect: 脚本启动，等待策略组装载…');
+waitPoliciesReady().then(ready => {
+  if (!ready){
+    console.log('RegionAutoDirect: 策略组似乎尚未完全装载（超过等待上限）— 仍继续探测，但切组可能失败');
+  } else {
+    console.log('RegionAutoDirect: 策略组已就绪，开始探测出口国家…');
+  }
+  probe(GEO_URLS);
+});
