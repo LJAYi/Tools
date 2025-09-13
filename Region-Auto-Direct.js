@@ -1,6 +1,6 @@
 // region-auto-direct.debug.js
 // 作用：按“出口国家”把对应场景组切到 DIRECT，其他地区切回各自的“时延优选”。
-// 版本：Debug Fix v2  — 针对 setSelectPolicy 返回 false 的情况，增加“策略组就绪等待 + 重试 +详细日志”。
+// 版本：Debug Fix v3 — 增加“子策略存在性检查”，精准定位名称不匹配问题。
 // 触发：network-changed（启动 / 切网 会触发）。
 // 适配：Loon 3.3.3（若你是旧版，API 可能不同）。
 
@@ -26,7 +26,7 @@ const DETECT_NODE  = "DIRECT";  // 探测走直连，避免被代理污染
 const NOTIFY       = true;      // 国家变化时通知（首次也会提示）
 const KEY_LAST_CC  = "RegionAutoDirect:last_cc";
 
-// 等待策略组“就绪”的重试参数（解决：脚本在策略组尚未完全装载前就运行导致 setSelectPolicy 失败）
+// 等待策略组“就绪”的重试参数
 const WAIT_TOTAL_TRIES = 10;    // 最多重试次数
 const WAIT_INTERVAL_MS = 500;   // 每次间隔（毫秒）
 
@@ -40,31 +40,25 @@ function parseMaybeJson(ccRaw){
 
 function getSelectedSafe(group){
   try {
-    if (typeof $config.getSelectedPolicy === 'function') {
-      // 若策略组不存在，某些版本会返回 undefined / null
-      return $config.getSelectedPolicy(group);
-    }
+    return typeof $config.getSelectedPolicy === 'function' ? $config.getSelectedPolicy(group) : undefined;
   } catch(e) {
-    console.log(`RegionAutoDirect: 读取当前子项异常 (${group}) → ${e}`);
+    console.log(`RegionAutoDirect: [警告] 读取当前选中项异常 (${group}) → ${e}`);
   }
   return undefined;
 }
 
 function groupReady(){
-  // 所有 MAP 中的 group 都能被读取到“当前选中项”（不一定有值，但不是 undefined）视为就绪
   return Object.values(MAP).every(({group}) => typeof getSelectedSafe(group) !== 'undefined');
 }
 
 function waitPoliciesReady(tries = WAIT_TOTAL_TRIES){
   if (groupReady()) return Promise.resolve(true);
   if (tries <= 0)   return Promise.resolve(false);
-  return new Promise(res => setTimeout(res, WAIT_INTERVAL_MS))
-    .then(() => waitPoliciesReady(tries - 1));
+  return new Promise(res => setTimeout(res, WAIT_INTERVAL_MS)).then(() => waitPoliciesReady(tries - 1));
 }
 
 function setPolicy(group, target){
   try {
-    // 幂等：如果当前就是目标，直接跳过
     const cur = getSelectedSafe(group);
     if (cur === target) { console.log(`RegionAutoDirect: ${group} 已是 ${target}，跳过`); return true; }
 
@@ -72,11 +66,26 @@ function setPolicy(group, target){
       $notification.post('RegionAutoDirect', 'API 不可用', '缺少 $config.setSelectPolicy（请检查 Loon 版本）');
       return false;
     }
+
+    // --- 诊断核心 ---
+    const availablePolicies = $config.getPolicies(group) || [];
+    console.log(`RegionAutoDirect: [诊断] 组 "${group}" 内可用子策略: [${availablePolicies.join(', ')}]`);
+
+    if (!availablePolicies.includes(target)) {
+      console.log(`RegionAutoDirect: [错误] 目标 "${target}" 不存在于组 "${group}" 的可用子策略中!`);
+      $notification.post(
+        '策略切换失败：名称不匹配',
+        `目标 "${target}" 不存在`,
+        `请检查策略组 "${group}" 的配置，脚本需要的目标子策略不在其中。`
+      );
+      return false;
+    }
+    // --- 诊断结束 ---
+
     const ok = $config.setSelectPolicy(group, target);
     console.log(`RegionAutoDirect: 切换 ${group} → ${target}：${ok ? '成功' : '失败'}`);
     if (!ok) {
-      // 提示最常见的三类原因：1) 组名不匹配；2) 子项名不在该组内；3) 组尚未完全装载
-      $notification.post('策略切换失败', `${group} → ${target}`, '可能原因：名称不匹配 / 目标子项不在该组 / 组尚未装载');
+      $notification.post('策略切换失败', `${group} → ${target}`, 'Loon 拒绝了此操作，请再次核对名称并检查配置。');
     }
     return ok;
   } catch (e){
@@ -95,7 +104,6 @@ function applyForCountry(cc){
   const last = $persistentStore.read(KEY_LAST_CC) || '';
   const changed = last && code !== last;
 
-  // ★ 每次都对齐策略（幂等）
   Object.keys(MAP).forEach(k => {
     const { group, direct, proxy } = MAP[k];
     setPolicy(group, code === k ? direct : proxy);
@@ -119,17 +127,13 @@ function probe(urls, i = 0){
   console.log(`RegionAutoDirect: 尝试第 ${i + 1} 个 API：${url}`);
 
   $httpClient.get({ url, timeout: TIMEOUT_MS, policy: DETECT_NODE }, (err, resp, data) => {
-    const ok = !err && resp && resp.status === 200 && data;
-    if (!ok) {
-      console.log(`RegionAutoDirect: 失败：${url} → ${err ? err : 'HTTP ' + (resp && resp.status)}`);
-      return probe(urls, i + 1);
-    }
-    let cc = String(data).trim();
-    if (url.includes('api.country.is')) cc = parseMaybeJson(cc);
+    if (!err && resp && resp.status === 200 && data) {
+      let cc = String(data).trim();
+      if (url.includes('api.country.is')) cc = parseMaybeJson(cc);
 
-    if (isIso2(cc)) { console.log(`RegionAutoDirect: 成功获取国家码：${cc}`); applyForCountry(cc); return $done(); }
-    console.log(`RegionAutoDirect: 数据格式不符（${url}）：${String(data).slice(0,80)}...`);
-    return probe(urls, i + 1);
+      if (isIso2(cc)) { console.log(`RegionAutoDirect: 成功获取国家码：${cc}`); applyForCountry(cc); return $done(); }
+    }
+    probe(urls, i + 1);
   });
 }
 
@@ -137,12 +141,22 @@ function probe(urls, i = 0){
 console.log('RegionAutoDirect: 脚本启动，等待策略组装载…');
 waitPoliciesReady().then(ready => {
   if (!ready){
-    console.log('RegionAutoDirect: 策略组似乎尚未完全装载（超过等待上限）— 仍继续探测，但切组可能失败');
     $notification.post('RegionAutoDirect 警告', '策略组加载超时', '切换操作可能失败，请检查配置或手动切换');
   } else {
     console.log('RegionAutoDirect: 策略组已就绪，开始探测出口国家…');
   }
   probe(GEO_URLS);
-  // 在 probe 结束后，$done 会被调用，此处无需再调用
 });
+```
+
+### 如何使用和排查：
+
+1.  **替换脚本**：用上面的新代码完整替换掉你当前的脚本。
+2.  **触发脚本**：手动运行一次脚本，或者切换一下网络（例如开关飞行模式）。
+3.  **查看日志（关键步骤）**：
+    * 打开 Loon 的脚本日志。
+    * 你会看到类似下面这样的 `[诊断]` 信息：
+        ```
+        RegionAutoDirect: [诊断] 组 "大陆场景" 内可用子策略: [DIRECT, 大陆延迟最低, 备用节点]
+        
 
