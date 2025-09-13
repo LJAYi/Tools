@@ -1,5 +1,5 @@
 # Loon 进阶配置
-# Date: 2025-09-08 22:34:27
+# Date: 2025-09-13 00:00:00
 # Author: https://t.me/iKeLee
 # 更多插件可前往 https://hub.kelee.one 安装
 
@@ -23,7 +23,7 @@ proxy-test-url = http://www.gstatic.com/generate_204
 resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
 geoip-url = https://geodata.kelee.one/Country-Masaiki.mmdb
 ipasn-url = https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.crashlynatics.com
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.crashlytics.com
 bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
 
 [Proxy]
@@ -31,7 +31,7 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 [Remote Proxy]
 
 [Remote Filter]
-大陆节点 = NameRegex, FilterKey = "^(?=.*((?i)🇨🇳|回国|中国|上海|广州|北京(\b(CN|China)(\d+)?\b)))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel)\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+大陆节点 = NameRegex, FilterKey = "^(?=.*((?i)🇨🇳|回国|中国|上海|广州|北京|(\b(CN|China)(\d+)?\b)))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel)\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
 香港节点 = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|HKG|Hong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 台湾节点 = NameRegex, FilterKey = "^(?=.*((?i)🇹🇼|台湾|(\b(TW|TWN|Tai|Taiwan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 日本节点 = NameRegex, FilterKey = "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|JPN|Japan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
@@ -44,6 +44,7 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 [Proxy Group]
 # --------------------------------
 # 场景策略
+场景选择 = select, 大陆场景, 香港场景, 台湾场景, 日本场景, 韩国场景, 新国场景, 美国场景, 全球场景, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 大陆场景 = select, 大陆时延优选, 大陆故障转移, 大陆负载均衡, DIRECT, 大陆节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/CN.png
 香港场景 = select, 香港时延优选, 香港故障转移, 香港负载均衡, DIRECT, 香港节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 台湾场景 = select, 台湾时延优选, 台湾故障转移, 台湾负载均衡, DIRECT, 台湾节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
@@ -51,7 +52,8 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 韩国场景 = select, 韩国时延优选, 韩国故障转移, 韩国负载均衡, DIRECT, 韩国节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
 新国场景 = select, 新国时延优选, 新国故障转移, 新国负载均衡, DIRECT, 新国节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国场景 = select, 美国时延优选, 美国故障转移, 美国负载均衡, DIRECT, 美国节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-全球场景 = select, DIRECT,全球节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+全球场景 = select, DIRECT, 全球节点, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+
 # --------------------------------
 # 自动策略
 大陆时延优选 = url-test, 大陆节点, interval = 60, tolerance = 50, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/CN.png
@@ -78,8 +80,8 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 新国负载均衡 = load-balance, 新国节点, interval = 60, max-timeout = 2000, algorithm = pcc, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国负载均衡 = load-balance, 美国节点, interval = 60, max-timeout = 2000, algorithm = pcc, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 # --------------------------------
-# 兜底策略后备
-兜底后备策略 = fallback, 香港场景, 台湾场景, 日本场景, 韩国场景, 新国场景, 美国场景, interval = 60, max-timeout = 2000, img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
+# 兜底后备策略
+兜底后备策略 = fallback, 香港时延优选, 台湾时延优选, 日本时延优选, 韩国时延优选, 新国时延优选, 美国时延优选, 大陆延时优选, interval = 60, max-timeout = 2000, img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
 
 [Rule]
 # Local Rule
@@ -100,30 +102,30 @@ FINAL, 兜底后备策略
 
 [Remote Rule]
 https://rule.kelee.one/Loon/Telegram.lsr, policy = 兜底后备策略, tag = Telegram, enabled = true
-https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy = 新国手动场景, tag = TikTok, enabled = true
-https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = 美国手动场景, tag = AI, enabled = true
-https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy = 全球手动场景, tag = Speedtest Intl, enabled = true
+https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy = 新国场景, tag = TikTok, enabled = true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = 新国场景, tag = AI, enabled = true
+https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy = 全球场景, tag = Speedtest Intl, enabled = true
 https://kelee.one/Tool/Loon/Lsr/AppleAccount.lsr, policy = DIRECT, tag = Apple Account, enabled = true
 https://kelee.one/Tool/Loon/Lsr/AppStore.lsr, policy = DIRECT, tag = App Store, enabled = false
 https://rule.kelee.one/Loon/GitHub.lsr, policy = 兜底后备策略, tag = GitHub, enabled = true
-https://rule.kelee.one/Loon/Netflix.lsr, policy = 新国手动场景, tag = Netflix, enabled = true
+https://rule.kelee.one/Loon/Netflix.lsr, policy = 新国场景, tag = Netflix, enabled = true
 https://rule.kelee.one/Loon/YouTube.lsr, policy = 兜底后备策略, tag = Youtube, enabled = true
 https://rule.kelee.one/Loon/Disney.lsr, policy = 兜底后备策略, tag = Disney, enabled = true
-https://rule.kelee.one/Loon/Twitter.lsr, policy = 兜底后备策略, tag = Twitter, enabled = true
-https://rule.kelee.one/Loon/Facebook.lsr, policy = 兜底后备策略, tag = Facebook, enabled = true
-https://rule.kelee.one/Loon/Instagram.lsr, policy = 兜底后备策略, tag = Instagram, enabled = true
+https://rule.kelee.one/Loon/Twitter.lsr, policy = 场景选择, tag = Twitter, enabled = true
+https://rule.kelee.one/Loon/Facebook.lsr, policy = 场景选择, tag = Facebook, enabled = true
+https://rule.kelee.one/Loon/Instagram.lsr, policy = 场景选择, tag = Instagram, enabled = true
 https://rule.kelee.one/Loon/Spotify.lsr, policy = 兜底后备策略, tag = Spotify, enabled = true
-https://rule.kelee.one/Loon/Google.lsr, policy = 兜底后备策略, tag = Google, enabled = true
+https://rule.kelee.one/Loon/Google.lsr, policy = 场景选择, tag = Google, enabled = true
 https://rule.kelee.one/Loon/OneDrive.lsr, policy = 兜底后备策略, tag = OneDrive, enabled = true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy = DIRECT, tag = LAN, enabled = true
-https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = DIRECT, tag = CN REGION, enabled = true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = 大陆场景, tag = CN REGION, enabled = true
 
 [Host]
-ssid: PHICOMM_5G = server: 10.0.0.1
 
 [Rewrite]
 
 [Script]
+network-changed script-path=https://raw.githubusercontent.com/LJAYi/Tools/refs/heads/main/Region-Auto-Direct.js, tag=RegionAutoDirect, enabled=true
 
 [Plugin]
 https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy = 兜底后备策略, enabled = true
