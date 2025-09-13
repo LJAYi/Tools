@@ -125,7 +125,7 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = 大陆场景, tag 
 [Rewrite]
 
 [Script]
-network-changed script-path=https://raw.githubusercontent.com/LJAYi/Tools/refs/heads/main/Region-Auto-Direct.js, tag=RegionAutoDirect, enabled=true
+network-changed script-path=https://raw.githubusercontent.com/LJAYi/Tools/main/Region-Auto-Direct.js, tag=RegionAutoDirect, enabled=true
 
 [Plugin]
 https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy = 兜底后备策略, enabled = true
