@@ -1,6 +1,6 @@
 // region-auto-direct.js
 // 功能：根据当前出口国家，自动将对应地区的策略组切换到 DIRECT。
-// 版本：Debug Fix v5 — 在 $done() 前增加了延迟，以防止竞态条件。
+// 版本：Debug Fix v6 — 增加了深度诊断日志，以定位执行中断点。
 // 触发：建议用于 network-changed 事件。
 // 作者：@Helge_007 & Gemini
 
@@ -9,13 +9,13 @@
 // 下方 'group' 和 'proxy' 的中文名称必须与您在 Loon 中的策略组名称完全一致。
 // 这是脚本中唯一应该包含非英文字符的部分。
 const MAP = {
-  CN: { group: "大陆场景", direct: "DIRECT", proxy: "大陆时延优选" },
-  HK: { group: "香港场景", direct: "DIRECT", proxy: "香港时延优选" },
-  TW: { group: "台湾场景", direct: "DIRECT", proxy: "台湾时延优选" },
-  JP: { group: "日本场景", direct: "DIRECT", proxy: "日本时延优选" },
-  KR: { group: "韩国场景", direct: "DIRECT", proxy: "韩国时延优选" },
-  SG: { group: "新国场景", direct: "DIRECT", proxy: "新国时延优选" },
-  US: { group: "美国场景", direct: "DIRECT", proxy: "美国时延优选" },
+  CN: { group: "大陆场景", direct: "DIRECT",     proxy: "大陆时延优选" },
+  HK: { group: "香港场景", direct: "DIRECT",     proxy: "香港时延优选" },
+  TW: { group: "台湾场景", direct: "DIRECT",     proxy: "台湾时延优选" },
+  JP: { group: "日本场景", direct: "DIRECT",     proxy: "日本时延优选" },
+  KR: { group: "韩国场景", direct: "DIRECT",     proxy: "韩国时延优选" },
+  SG: { group: "新国场景", direct: "DIRECT",     proxy: "新国时延优选" },
+  US: { group: "美国场景", direct: "DIRECT",     proxy: "美国时延优选" },
 };
 
 const GEO_URLS = [
@@ -98,25 +98,32 @@ function setPolicy(group, target){
 }
 
 function applyForCountry(cc){
+  console.log("RegionAutoDirect: [调试] 已进入 applyForCountry 函数。");
   const code = String(cc || '').trim().toUpperCase();
   if (!isIso2(code)) {
     $notification.post('区域探测失败', '未能获取有效的国家代码。', '已回退为所有地区均使用代理。');
     return fallbackToProxy();
   }
 
+  console.log("RegionAutoDirect: [调试] 准备从持久化存储中读取上次的国家代码...");
   const last = $persistentStore.read(KEY_LAST_CC) || '';
+  console.log(`RegionAutoDirect: [调试] 上次的国家代码是: "${last || '无'}"`);
   const changed = last && code !== last;
 
+  console.log("RegionAutoDirect: [调试] 即将开始遍历 MAP 并设置策略...");
   Object.keys(MAP).forEach(k => {
+    console.log(`RegionAutoDirect: [调试] 正在处理 MAP 中的键: ${k}`);
     const { group, direct, proxy } = MAP[k];
     setPolicy(group, code === k ? direct : proxy);
   });
 
+  console.log("RegionAutoDirect: [调试] MAP 遍历完成，准备更新持久化存储...");
   if (NOTIFY) {
     if (!last) $notification.post('出口国家已探测', `当前: ${code}`, '已根据您的位置设置策略。');
     else if (changed) $notification.post('出口国家已变更', `${last} -> ${code}`, '策略已更新。');
   }
   $persistentStore.write(code, KEY_LAST_CC);
+  console.log("RegionAutoDirect: [调试] applyForCountry 函数执行完毕。");
 }
 
 function fallbackToProxy(){
