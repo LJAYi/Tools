@@ -1,6 +1,6 @@
 // region-auto-direct.js
 // 功能：根据当前出口国家，自动将对应地区的策略组切换到 DIRECT。
-// 版本：Debug Fix v6 — 增加了深度诊断日志，以定位执行中断点。
+// 版本：Debug Fix v7 — 将 forEach 替换为 for...of 循环以解决执行问题。
 // 触发：建议用于 network-changed 事件。
 // 作者：@Helge_007 & Gemini
 
@@ -70,7 +70,6 @@ function setPolicy(group, target){
       return false;
     }
 
-    // --- 诊断核心 ---
     const availablePolicies = $config.getPolicies(group) || [];
     console.log(`RegionAutoDirect: [诊断] 策略组 "${group}" 内可用子策略: [${availablePolicies.join(', ')}]`);
 
@@ -83,7 +82,6 @@ function setPolicy(group, target){
       );
       return false;
     }
-    // --- 诊断结束 ---
 
     const ok = $config.setSelectPolicy(group, target);
     console.log(`RegionAutoDirect: 切换 "${group}" -> "${target}": ${ok ? '成功' : '失败'}`);
@@ -105,17 +103,17 @@ function applyForCountry(cc){
     return fallbackToProxy();
   }
 
-  console.log("RegionAutoDirect: [调试] 准备从持久化存储中读取上次的国家代码...");
   const last = $persistentStore.read(KEY_LAST_CC) || '';
-  console.log(`RegionAutoDirect: [调试] 上次的国家代码是: "${last || '无'}"`);
   const changed = last && code !== last;
 
-  console.log("RegionAutoDirect: [调试] 即将开始遍历 MAP 并设置策略...");
-  Object.keys(MAP).forEach(k => {
+  console.log("RegionAutoDirect: [调试] 即将开始遍历 MAP 并设置策略 (使用 for...of 循环)...");
+  // 使用 for...of 循环代替 forEach，以增强在某些 JS 环境下的稳定性。
+  for (const k of Object.keys(MAP)) {
     console.log(`RegionAutoDirect: [调试] 正在处理 MAP 中的键: ${k}`);
     const { group, direct, proxy } = MAP[k];
     setPolicy(group, code === k ? direct : proxy);
-  });
+    console.log(`RegionAutoDirect: [调试] 已处理完键: ${k}`);
+  }
 
   console.log("RegionAutoDirect: [调试] MAP 遍历完成，准备更新持久化存储...");
   if (NOTIFY) {
@@ -128,11 +126,17 @@ function applyForCountry(cc){
 
 function fallbackToProxy(){
   console.log('RegionAutoDirect: 执行回退：将所有地区策略组设为其各自的代理策略。');
-  Object.keys(MAP).forEach(k => setPolicy(MAP[k].group, MAP[k].proxy));
+  for (const k of Object.keys(MAP)) {
+     setPolicy(MAP[k].group, MAP[k].proxy)
+  };
 }
 
 function probe(urls, i = 0){
-  if (i >= urls.length) { fallbackToProxy(); return $done(); }
+  if (i >= urls.length) { 
+    fallbackToProxy();
+    setTimeout(() => $done(), 500);
+    return;
+  }
   const url = urls[i];
   console.log(`RegionAutoDirect: 正在尝试 API #${i + 1}: ${url}`);
 
@@ -144,16 +148,13 @@ function probe(urls, i = 0){
       if (isIso2(cc)) {
         console.log(`RegionAutoDirect: 成功获取国家代码: ${cc}`);
         applyForCountry(cc);
-        // 引入一个短暂的延迟再调用 $done()，确保策略更改有足够的时间被处理。
-        // 这有助于防止脚本过早终止的竞态条件。
         setTimeout(() => {
             console.log("RegionAutoDirect: 脚本已在延迟后结束。");
             $done();
-        }, 500); // 500毫秒延迟
-        return; // 停止探测其他 API
+        }, 500);
+        return;
       }
     }
-    // 如果执行到这里，说明当前 API 失败或返回了无效数据，尝试下一个。
     probe(urls, i + 1);
   });
 }
@@ -163,9 +164,10 @@ console.log('RegionAutoDirect: 脚本启动，正在等待策略组就绪...');
 waitPoliciesReady().then(ready => {
   if (!ready){
     $notification.post('RegionAutoDirect 警告', '策略组加载超时。', '切换可能会失败，请检查您的配置或手动切换。');
+    probe(GEO_URLS);
   } else {
     console.log('RegionAutoDirect: 策略组已就绪，开始探测国家...');
+    probe(GEO_URLS);
   }
-  probe(GEO_URLS);
 });
 
