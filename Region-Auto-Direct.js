@@ -1,6 +1,6 @@
 // region-auto-direct.js
 // 功能：根据当前出口国家，自动将对应地区的策略组切换到 DIRECT。
-// 版本：Final Fix v8 — 将 setPolicy 逻辑内联到主循环，以规避函数调用问题。
+// 版本：Final Fix v9 — 增加“配置预检”模块，启动时即验证所有策略名称。
 // 触发：建议用于 network-changed 事件。
 // 作者：@Helge_007 & Gemini
 
@@ -58,6 +58,44 @@ function waitPoliciesReady(tries = WAIT_TOTAL_TRIES){
   return new Promise(res => setTimeout(res, WAIT_INTERVAL_MS)).then(() => waitPoliciesReady(tries - 1));
 }
 
+// 新增的“配置预检”函数
+function validateMapConfiguration() {
+  console.log("RegionAutoDirect: 开始进行配置预检...");
+  for (const key in MAP) {
+    const { group, direct, proxy } = MAP[key];
+    const availablePolicies = $config.getPolicies(group);
+
+    // 检查策略组本身是否存在
+    if (!availablePolicies || availablePolicies.length === 0) {
+      const errorMsg = `预检失败：策略组 "${group}" 不存在或为空。请检查您的 Loon 配置。`;
+      console.log(`RegionAutoDirect: [错误] ${errorMsg}`);
+      $notification.post("脚本配置错误", errorMsg, "脚本已停止运行。");
+      return false;
+    }
+
+    // 检查 direct 策略是否存在
+    if (!availablePolicies.includes(direct)) {
+      const errorMsg = `预检失败：在策略组 "${group}" 中找不到名为 "${direct}" 的子策略。`;
+      const availableMsg = `可用选项：[${availablePolicies.join(", ")}]`;
+      console.log(`RegionAutoDirect: [错误] ${errorMsg}`);
+      $notification.post("脚本配置错误", errorMsg, availableMsg);
+      return false;
+    }
+
+    // 检查 proxy 策略是否存在
+    if (!availablePolicies.includes(proxy)) {
+      const errorMsg = `预检失败：在策略组 "${group}" 中找不到名为 "${proxy}" 的子策略。`;
+      const availableMsg = `可用选项：[${availablePolicies.join(", ")}]`;
+      console.log(`RegionAutoDirect: [错误] ${errorMsg}`);
+      $notification.post("脚本配置错误", errorMsg, availableMsg);
+      return false;
+    }
+  }
+  console.log("RegionAutoDirect: 配置预检通过，所有名称均匹配。");
+  return true;
+}
+
+
 function applyForCountry(cc){
   const code = String(cc || '').trim().toUpperCase();
   if (!isIso2(code)) {
@@ -67,48 +105,27 @@ function applyForCountry(cc){
 
   const last = $persistentStore.read(KEY_LAST_CC) || '';
   const changed = last && code !== last;
-
-  console.log("RegionAutoDirect: 即将开始遍历 MAP 并直接在循环内设置策略...");
   
-  // 将 setPolicy 的逻辑直接内联到循环中
   for (const k of Object.keys(MAP)) {
     const { group, direct, proxy } = MAP[k];
     const target = (code === k) ? direct : proxy;
     
-    console.log(`RegionAutoDirect: 正在处理 "${group}"，目标是 "${target}"`);
-
     try {
       const cur = getSelectedSafe(group);
       if (cur === target) {
         console.log(`RegionAutoDirect: "${group}" 已是 "${target}"，跳过。`);
-        continue; // 跳到下一个循环
-      }
-
-      if (typeof $config.setSelectPolicy !== 'function'){
-        $notification.post('RegionAutoDirect', 'API 不可用', '缺少 $config.setSelectPolicy');
         continue;
       }
-
-      const availablePolicies = $config.getPolicies(group) || [];
-      console.log(`RegionAutoDirect: [诊断] "${group}" 内可用子策略: [${availablePolicies.join(', ')}]`);
-
-      if (!availablePolicies.includes(target)) {
-        console.log(`RegionAutoDirect: [错误] 目标 "${target}" 不存在于 "${group}" 中！`);
-        $notification.post('切换失败：名称不匹配', `找不到目标 "${target}"`, `请检查策略组 "${group}" 的配置。`);
-        continue;
-      }
-
       const ok = $config.setSelectPolicy(group, target);
       console.log(`RegionAutoDirect: 切换 "${group}" -> "${target}": ${ok ? '成功' : '失败'}`);
       if (!ok) {
-        $notification.post('切换失败', `"${group}" -> "${target}"`, 'Loon 拒绝了操作，请检查名称。');
+        $notification.post('切换失败', `"${group}" -> "${target}"`, 'Loon 拒绝了操作。');
       }
     } catch (e) {
       $notification.post('切换异常', `"${group}" -> "${target}"`, String(e));
     }
   }
 
-  console.log("RegionAutoDirect: MAP 遍历和策略设置完成。");
   if (NOTIFY) {
     if (!last) $notification.post('出口国家已探测', `当前: ${code}`, '已根据您的位置设置策略。');
     else if (changed) $notification.post('出口国家已变更', `${last} -> ${code}`, '策略已更新。');
@@ -120,12 +137,7 @@ function fallbackToProxy(){
   console.log('RegionAutoDirect: 执行回退：将所有地区设为代理策略。');
   for (const k of Object.keys(MAP)) {
      const { group, proxy } = MAP[k];
-     try {
-       $config.setSelectPolicy(group, proxy);
-     } catch(e) {
-       // fallback 失败时不再打扰用户
-       console.log(`RegionAutoDirect: [回退失败] ${group} -> ${proxy}`);
-     }
+     try { $config.setSelectPolicy(group, proxy); } catch(e) {}
   };
 }
 
@@ -146,10 +158,7 @@ function probe(urls, i = 0){
       if (isIso2(cc)) {
         console.log(`RegionAutoDirect: 成功获取国家代码: ${cc}`);
         applyForCountry(cc);
-        setTimeout(() => {
-            console.log("RegionAutoDirect: 脚本已在延迟后结束。");
-            $done();
-        }, 500);
+        setTimeout(() => { $done(); }, 500);
         return;
       }
     }
@@ -161,11 +170,18 @@ function probe(urls, i = 0){
 console.log('RegionAutoDirect: 脚本启动，正在等待策略组就绪...');
 waitPoliciesReady().then(ready => {
   if (!ready){
-    $notification.post('RegionAutoDirect 警告', '策略组加载超时。', '切换可能会失败，请检查配置。');
+    $notification.post('RegionAutoDirect 警告', '策略组加载超时。', '脚本已停止运行。');
+    return $done();
+  }
+  
+  console.log('RegionAutoDirect: 策略组已就绪。');
+  // 执行配置预检
+  if (validateMapConfiguration()) {
+    // 预检通过后才开始探测国家
     probe(GEO_URLS);
   } else {
-    console.log('RegionAutoDirect: 策略组已就绪，开始探测国家...');
-    probe(GEO_URLS);
+    // 预检失败，脚本已发送通知并停止
+    $done();
   }
 });
 
