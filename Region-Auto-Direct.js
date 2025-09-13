@@ -7,12 +7,13 @@
 
 // 地区映射：键=国家码，值=该国对应的“地区优选策略组名”
 const MAP = {
-  "SG": { group: "新国时延优选", direct: "DIRECT", proxy: "新国时延优选" },
-  "US": { group: "美国时延优选", direct: "DIRECT", proxy: "美国时延优选" },
-  "HK": { group: "香港时延优选", direct: "DIRECT", proxy: "香港时延优选" },
-  // 可继续扩展：例如
-  // "JP": { group: "日本时延优选", direct: "DIRECT", proxy: "日本时延优选" },
-  // "KR": { group: "韩国时延优选", direct: "DIRECT", proxy: "韩国时延优选" },
+  "CN": { group: "大陆场景", direct: "DIRECT", proxy: "大陆时延优选" },
+  "HK": { group: "香港场景", direct: "DIRECT", proxy: "香港时延优选" },
+  "TW": { group: "台湾场景", direct: "DIRECT", proxy: "台湾时延优选" },
+  "JP": { group: "日本场景", direct: "DIRECT", proxy: "日本时延优选" },
+  "KR": { group: "韩国场景", direct: "DIRECT", proxy: "韩国时延优选" },
+  "SG": { group: "新国场景", direct: "DIRECT", proxy: "新国时延优选" },
+  "US": { group: "美国场景", direct: "DIRECT", proxy: "美国时延优选" },
 };
 
 const GEO_URLS = [
