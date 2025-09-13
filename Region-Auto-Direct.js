@@ -118,7 +118,7 @@ function probe(urls, i = 0){
   const url = urls[i];
   console.log(`RegionAutoDirect: 尝试第 ${i + 1} 个 API：${url}`);
 
-  $httpClient.get({ url, timeout: TIMEOUT_MS, node: DETECT_NODE }, (err, resp, data) => {
+  $httpClient.get({ url, timeout: TIMEOUT_MS, policy: DETECT_NODE }, (err, resp, data) => {
     const ok = !err && resp && resp.status === 200 && data;
     if (!ok) {
       console.log(`RegionAutoDirect: 失败：${url} → ${err ? err : 'HTTP ' + (resp && resp.status)}`);
@@ -138,8 +138,11 @@ console.log('RegionAutoDirect: 脚本启动，等待策略组装载…');
 waitPoliciesReady().then(ready => {
   if (!ready){
     console.log('RegionAutoDirect: 策略组似乎尚未完全装载（超过等待上限）— 仍继续探测，但切组可能失败');
+    $notification.post('RegionAutoDirect 警告', '策略组加载超时', '切换操作可能失败，请检查配置或手动切换');
   } else {
     console.log('RegionAutoDirect: 策略组已就绪，开始探测出口国家…');
   }
   probe(GEO_URLS);
+  // 在 probe 结束后，$done 会被调用，此处无需再调用
 });
+
