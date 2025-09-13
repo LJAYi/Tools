@@ -1,11 +1,11 @@
 // region-auto-direct.js
-// 功能：根据“当前出口国家”动态把对应地区策略组切到 DIRECT；不在该国则维持该地区代理
+// 功能：根据“当前出口国家”动态把对应地区策略组切到 DIRECT；不在该国则维持代理
 // 触发：建议挂在 [Script] 的 network-changed（启动/换网都会触发）
 // 说明：使用第一个成功返回的 GEO API；失败则继续下一个；全失败则保守回退为“走代理”
 
 /* ===================== 可 配 置 区 ===================== */
 
-// 地区映射：键=国家码，值=该国对应的“地区优选策略组名”
+// 地区映射：键=国家码，值=该国对应的“场景组名”和代理组名
 const MAP = {
   "CN": { group: "大陆场景", direct: "DIRECT", proxy: "大陆时延优选" },
   "HK": { group: "香港场景", direct: "DIRECT", proxy: "香港时延优选" },
@@ -16,6 +16,7 @@ const MAP = {
   "US": { group: "美国场景", direct: "DIRECT", proxy: "美国时延优选" },
 };
 
+// GEO API 地址（顺序尝试）
 const GEO_URLS = [
   "https://ipapi.co/country/",
   "https://ifconfig.co/country-iso",
@@ -25,7 +26,7 @@ const GEO_URLS = [
 // 单次请求超时（毫秒）
 const TIMEOUT_MS = 2500;
 
-// 探测时强制走的策略
+// 探测时强制走的策略（一般用 DIRECT，避免被代理干扰）
 const DETECT_POLICY = "DIRECT";
 
 // 是否在“国家变化时”通知
@@ -43,8 +44,14 @@ function isIso2(s) {
 // 切换策略组选项（Loon 提供的脚本 API）
 function setPolicy(group, target) {
   try {
-    const ok = $config.getConfig(group, target); // 选择策略组项
-    if (!ok) $notification.post("RegionAutoDirect", `${group} → ${target}`, "应用失败");
+    if (typeof $config.setSelectPolicy !== "function") {
+      $notification.post("RegionAutoDirect", "API 不可用", "缺少 $config.setSelectPolicy");
+      return;
+    }
+    const ok = $config.setSelectPolicy(group, target);
+    if (!ok) {
+      $notification.post("RegionAutoDirect", `${group} → ${target}`, "应用失败（请检查名称是否匹配）");
+    }
   } catch (e) {
     $notification.post("RegionAutoDirect", `${group} → ${target}`, `异常：${e}`);
   }
@@ -58,7 +65,7 @@ function applyForCountry(cc) {
   const last = $persistentStore.read(PERSIST_KEY_LAST_CC) || "";
   const changed = code && code !== last;
 
-  // 依据是否在“本地国”决定 DIRECT/代理
+  // 按照是否在“本地国”决定 DIRECT / 代理
   Object.keys(MAP).forEach(k => {
     const { group, direct, proxy } = MAP[k];
     setPolicy(group, code === k ? direct : proxy);
