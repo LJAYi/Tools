@@ -1,5 +1,5 @@
 /*
-无忧行签到脚本
+JegoTrip
 */
 
 // --- Loon 参数 shim ---
