@@ -130,13 +130,10 @@ const alreadySignedTodayEntry = $.signs.find(signInfo => signInfo.isSign === 3);
     }
  }
 
-
+  
   await expireRewardQuery();
   let total = $.expireRewardQuery.tripcoins;
-  $.desc += `\n无忧币总计：${total}💰\n${$.expireRewardQuery.rewardTip}`;
-  if ($.expireRewardQuery.tripcoinsTip) {
-    $.desc += `\n${$.expireRewardQuery.tripcoinsTip}`;
-  }
+  $.desc += "\n" + [`无忧币总计：${total}💰`, $.expireRewardQuery.rewardTip, $.expireRewardQuery.tripcoinsTip].filter(Boolean).join("\n");
   $.msg($.name, '', $.desc);
   if(signInFailed) {
     console.log("签到失败，发送通知...");
