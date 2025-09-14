@@ -1,7 +1,6 @@
-# Loon 进阶配置
+# Loon Configuration
 # Date: 2025-09-13 00:00:00
-# Author: https://t.me/iKeLee
-# 更多插件可前往 https://hub.kelee.one 安装
+# Author: LJAYi
 
 [General]
 ip-mode = v4-only
