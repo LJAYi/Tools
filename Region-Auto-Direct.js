@@ -3,19 +3,19 @@
 // Author: LJAYi
 
 const MAP = {
-  CN:{group:"大陆场景", direct:"DIRECT", proxy:"大陆时延优选"},
-  HK:{group:"香港场景", direct:"DIRECT", proxy:"香港时延优选"},
-  TW:{group:"台湾场景", direct:"DIRECT", proxy:"台湾时延优选"},
-  JP:{group:"日本场景", direct:"DIRECT", proxy:"日本时延优选"},
-  KR:{group:"韩国场景", direct:"DIRECT", proxy:"韩国时延优选"},
-  SG:{group:"新国场景", direct:"DIRECT", proxy:"新国时延优选"},
-  US:{group:"美国场景", direct:"DIRECT", proxy:"美国时延优选"},
+  CN:{group:"大陆场景", direct:"DIRECT",      proxy:"大陆时延优选"},
+  HK:{group:"香港场景", direct:"DIRECT",      proxy:"香港时延优选"},
+  TW:{group:"台湾场景", direct:"DIRECT",      proxy:"台湾时延优选"},
+  JP:{group:"日本场景", direct:"DIRECT",      proxy:"日本时延优选"},
+  KR:{group:"韩国场景", direct:"DIRECT",      proxy:"韩国时延优选"},
+  SG:{group:"新国场景", direct:"DIRECT",      proxy:"新国时延优选"},
+  US:{group:"美国场景", direct:"DIRECT",      proxy:"美国时延优选"},
 };
 
 const URLS = [
   "https://ipapi.co/country",
   "https://ifconfig.co/country-iso",
-//  "https://api.country.is/country"
+//  "https://api.country.is"
 ];
 
 const T=3000, NODE="DIRECT", KEY="RegionAutoDirect:last_cc";
@@ -29,7 +29,20 @@ const note=(line,errs)=>$notification.post("Region Auto Direct", line||"", (errs
 
 function set(g,t,errs){
   try{
-    const cur=sel(g); if(cur===t){ console.log(`[SKIP] ${g} 已是 ${t}`); return true; }
+    const cur=sel(g);
+    if (t!=="DIRECT"){
+      if (cur && cur!=="DIRECT"){ console.log(`[SKIP] ${g} 已是代理 (${cur})，不切到 ${t}`); return true; }
+      try{
+        if (typeof $config.getSubPolicys==="function"){
+          const tgtSubs=$config.getSubPolicys(t);
+          if (Array.isArray(tgtSubs) && tgtSubs.length===0){
+            console.log(`[SKIP] 目标组 ${t} 候选为空，跳过`);
+            return true;
+          }
+        }
+      }catch{}
+    }
+    if(cur===t){ console.log(`[SKIP] ${g} 已是 ${t}`); return true; }
     let ok=false;
     if(typeof $config.setSelectPolicy==="function"){
       ok=$config.setSelectPolicy(g,t);
