@@ -13,7 +13,7 @@ if (typeof process === 'undefined') process = { env: {} };
   }
 });
 
-//jacobhere/Jego_sign
+//https://github.com/jacobhere/Jego_sign/blob/main/Jego_sign.js
 
 const $ = new Env('无忧行');
 const token = process.env.JEGO_TOKEN;
