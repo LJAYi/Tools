@@ -1,5 +1,5 @@
 // region-auto-direct.js
-// Date: 2025-09-14 11:46:!2
+// Date: 2025-09-14 11:46:12
 // Author: LJAYi
 
 const MAP = {
