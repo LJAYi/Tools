@@ -1,0 +1,42 @@
+# NAME: HSBC Reward+
+# AUTHOR: LJAY
+# REF: https://github.com/ryanchen01/Configs/blob/d96023fb7a0969b567003601ee188491ccf22371/Filters/Surge/Stocks.list
+# UPDATED: 2025-10-08 19:32:44
+
+# === Charles Schwab ===
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabcdn.com
+DOMAIN-SUFFIX,schwab.net
+DOMAIN-SUFFIX,aboutschwab.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-KEYWORD,thinkorswim
+
+# === Fidelity Investments ===
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,fidelityrewards.com
+DOMAIN-SUFFIX,fmr.com
+DOMAIN-KEYWORD,fidelity
+
+# === Interactive Brokers (IBKR) ===
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,tradersacademy.online
+
+# === Common Market / Data / Insights Providers ===
+DOMAIN-SUFFIX,recognia.com
+DOMAIN-SUFFIX,morningstar.com
+DOMAIN-SUFFIX,zacks.com
+DOMAIN-SUFFIX,refinitiv.com
+DOMAIN-SUFFIX,marketwatch.com
+DOMAIN-SUFFIX,barchart.com
+DOMAIN-SUFFIX,benzinga.com
+
+# === Platform Services / SDKs / A/B Testing ===
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,adobedtm.com
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,omtrdc.net
