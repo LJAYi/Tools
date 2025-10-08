@@ -1,0 +1,12 @@
+# NAME: CapitalOne
+# AUTHOR: LJAY
+# REF: https://github.com/YooJuZ/rule/blob/main/c1.list
+# UPDATED: 2025-10-08 19:10:03
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitalone360.com
+DOMAIN,capitalone-udc.digital-cloud.medallia.com
+DOMAIN,capitalone-resources.digital-cloud.medallia.com
+DOMAIN,capitaloneservices.demdex.net
+DOMAIN,capitaloneservices.tt.omtrdc.net
+DOMAIN,mobile-collector.newrelic.com
+DOMAIN,c1vhosting.it
