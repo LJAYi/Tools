@@ -1,0 +1,7 @@
+# NAME: HSBC Reward+
+# AUTHOR: LJAY
+# REF: https://github.com/YooJuZ/rule/blob/main/n26.list
+# UPDATED: 2025-10-08 19:21:45
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,tech26.de
+DOMAIN-SUFFIX,number26.de
