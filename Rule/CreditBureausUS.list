@@ -1,0 +1,12 @@
+# NAME: HSBC Reward+
+# AUTHOR: LJAY
+# REF: https://github.com/YooJuZ/rule/blob/main/usacarriercredit.list
+# UPDATED: 2025-10-08 19:19:01
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,experiancs.com
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,myequifax.com
+DOMAIN-SUFFIX,creditkarma.com
+DOMAIN-SUFFIX,myfico.com
+DOMAIN-SUFFIX,empowerper.com
+DOMAIN-SUFFIX,empowerpersonal.com
