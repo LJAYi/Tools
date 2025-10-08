@@ -127,6 +127,7 @@ https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enable
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=大陆场景, tag=CN REGION, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/HSBCReward.list, policy=香港场景, tag=HSBC Reward+, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/HSBC.list, policy=DIRECT, tag=HSBC, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/CNCBI.list, policy=DIRECT, tag=CNCBI, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/CapitalOne.list, policy=DIRECT, tag=Capital One, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/AmexUS.list, policy=DIRECT, tag=Amex US, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Chase.list, policy=DIRECT, tag=Chase, enabled=true
