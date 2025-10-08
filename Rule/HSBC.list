@@ -1,0 +1,101 @@
+# NAME: HSBC Reward+
+# AUTHOR: LJAY
+# REF: https://github.com/specialmenfo/Surge/blob/master/Personal/Sgmodule/List/HongKongBank.list, https://github.com/itjhDev/Surge/blob/main/Filter/HKBank.list, https://github.com/itjhDev/Surge/blob/main/Filter/HKBank.list, https://github.com/YooJuZ/rule/blob/main/hsbcus.list
+# UPDATED: 2025-10-08 17:12:34
+
+# === Core HSBC Domains ===
+DOMAIN-SUFFIX,hsbc.com
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,hsbc.com.sg
+DOMAIN-SUFFIX,hsbc.com.my
+DOMAIN-SUFFIX,hsbc.com.cn
+DOMAIN-SUFFIX,hsbc.com.au
+DOMAIN-SUFFIX,hsbc.ca
+DOMAIN-SUFFIX,hsbc.fr
+DOMAIN-SUFFIX,us.hsbc.com
+DOMAIN-SUFFIX,global.hsbc
+DOMAIN-KEYWORD,hsbchk
+
+# === Main HSBC Hong Kong (Web + App) ===
+DOMAIN,www.hsbc.com.hk
+DOMAIN,www.isstprod.hsbc.com.hk
+DOMAIN,www.issthk.hsbc.com.hk
+DOMAIN,rbwm-api.hsbc.com.hk
+DOMAIN,cdn.hsbc.com.hk
+DOMAIN,cdntm.hsbc.com.hk
+DOMAIN,dco-ao.hsbc.com.hk
+DOMAIN,dco-dc.hsbc.com.hk
+DOMAIN,www.eticketing.hsbc.com.hk
+DOMAIN,m.mobilex-static.hsbc.com.hk
+DOMAIN,wealth-mobilex-static.hsbc.com.hk
+DOMAIN,mauth-hk.hsbc.com.hk
+DOMAIN,servicing.hsbc.com.hk
+DOMAIN,insurance.hsbc.com.hk
+DOMAIN,appointment.hsbc.com.hk
+DOMAIN,cloud.messaging.hsbc.com.hk
+DOMAIN,investments4.personal-banking.hsbc.com.hk
+
+# === Authentication / PKI ===
+DOMAIN,pki.hsbc.com
+DOMAIN,pkicrl-internal.it.global.hsbc
+
+# === Risk Control / Fraud Detection (ThreatMetrix / Online-Metrix) ===
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN,h.online-metrix.net
+DOMAIN,aa.online-metrix.net
+DOMAIN,h64.online-metrix.net
+DOMAIN,h-sdk.online-metrix.net
+DOMAIN-SUFFIX,threatmetrix.com
+DOMAIN-SUFFIX,vv1865.com
+DOMAIN-SUFFIX,cloud1.vv1865.com
+DOMAIN,messaging.prod.ap-east-1.vam-hk.cloud1.vv1865.com
+DOMAIN,notifications.prod.ap-east-1.vam-hk.cloud1.vv1865.com
+DOMAIN,eapi.preferences.prod.ap-east-1.vam-hk.cloud1.vv1865.com
+DOMAIN-SUFFIX,preferences.prod.us-east-1.vam-us.cloud1.vv1865.com
+DOMAIN,messaging.prod.us-east-1.vam-us.cloud1.vv1865.com
+
+# === Analytics / Monitoring (Tealium / AppDynamics / Webtrekk) ===
+DOMAIN-SUFFIX,tealiumiq.com
+DOMAIN-SUFFIX,eum-appdynamics.com
+DOMAIN-SUFFIX,appdynamics.com
+DOMAIN-SUFFIX,we-stats.com
+DOMAIN,collect-ap-east-1.tealiumiq.com
+DOMAIN,mobile.eum-appdynamics.com
+DOMAIN,col.eum-appdynamics.com
+
+# === LivePerson (Customer Support / Messaging) ===
+DOMAIN-SUFFIX,liveperson.net
+DOMAIN-SUFFIX,lpsnmedia.net
+DOMAIN-SUFFIX,loggos.liveperson.net
+DOMAIN-SUFFIX,push.liveperson.net
+DOMAIN-SUFFIX,idp.liveperson.net
+DOMAIN-SUFFIX,va.v.liveperson.net
+DOMAIN-SUFFIX,va.push.liveperson.net
+
+# === Surveys / Feedback (Qualtrics) ===
+DOMAIN-SUFFIX,qualtrics.com
+DOMAIN-SUFFIX,siteintercept.qualtrics.com
+DOMAIN-SUFFIX,hsbcdigital.siteintercept.qualtrics.com
+
+# === CDN / Delivery Network ===
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,cdn.hsbc.com.sg
+DOMAIN-SUFFIX,cdnbc.hsbc.com.hk
+DOMAIN-SUFFIX,cdnbc.hsbc.com.my
+DOMAIN-SUFFIX,cdnbc.hsbc.com.sg
+
+# === SSL Certificate Validation ===
+DOMAIN-SUFFIX,digicert.com
+DOMAIN,ocsp.digicert.com
+
+# === Global / Regional Extensions ===
+DOMAIN,status.mobilex.vpc.hsbc.co.uk
+DOMAIN-SUFFIX,hsbcglobalcmb.sc.omtrdc.net
+DOMAIN-SUFFIX,hsbckinetic.co.uk
+DOMAIN-SUFFIX,personal-banking.hsbc.com.sg
+DOMAIN-SUFFIX,expat.hsbc.com
+DOMAIN-SUFFIX,ciiom.hsbc.com
+DOMAIN-SUFFIX,chub.expat.hsbc.com
+IP-ASN,26381
