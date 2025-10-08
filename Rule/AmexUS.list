@@ -1,0 +1,8 @@
+# NAME: HSBC Reward+
+# AUTHOR: LJAY
+# REF: https://github.com/YooJuZ/rule/blob/main/amexus.list
+# UPDATED: 2025-10-08 19:11:04
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,aexp.com
+DOMAIN-SUFFIX,aexp-static.com
+DOMAIN-SUFFIX,americanexpress.com
