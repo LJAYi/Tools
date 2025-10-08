@@ -1,7 +1,7 @@
 # NAME: HSBC Reward+
 # AUTHOR: LJAY
 # REF: https://github.com/specialmenfo/Surge/blob/master/Personal/Sgmodule/List/HongKongBank.list, https://github.com/itjhDev/Surge/blob/main/Filter/HKBank.list, https://github.com/itjhDev/Surge/blob/main/Filter/HKBank.list, https://github.com/YooJuZ/rule/blob/main/hsbcus.list
-# UPDATED: 2025-10-08 17:12:34
+# UPDATED: 2025-10-08 17:20:56
 
 # === Core HSBC Domains ===
 DOMAIN-SUFFIX,hsbc.com
