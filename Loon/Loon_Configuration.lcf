@@ -103,16 +103,15 @@ IP-CIDR6,fc00::/18,DIRECT
 FINAL,场景选择
 
 [Remote Rule]
-https://rule.kelee.one/Loon/iCloud.lsr, policy=DIRECT, tag=iCloud.lsr, enabled=true
-https://rule.kelee.one/Loon/LinkedIn.lsr, policy=新国场景, tag=LinkedIn.lsr, enabled=true
-https://rule.kelee.one/Loon/XiaoHongShu.lsr, policy=DIRECT, tag=XiaoHongShu.lsr, enabled=true
 https://rule.kelee.one/Loon/WeChat.lsr, policy=DIRECT, tag=WeChat.lsr, enabled=true
+https://rule.kelee.one/Loon/XiaoHongShu.lsr, policy=DIRECT, tag=XiaoHongShu.lsr, enabled=true
 https://rule.kelee.one/Loon/Telegram.lsr, policy=全球故障转移, tag=Telegram, enabled=true
 https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy=新国场景, tag=TikTok, enabled=true
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=新国场景, tag=AI, enabled=true
 https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=全球场景, tag=Speedtest Intl, enabled=true
 https://kelee.one/Tool/Loon/Lsr/AppleAccount.lsr, policy=DIRECT, tag=Apple Account, enabled=true
 https://kelee.one/Tool/Loon/Lsr/AppStore.lsr, policy=DIRECT, tag=App Store, enabled=true
+https://rule.kelee.one/Loon/iCloud.lsr, policy=DIRECT, tag=iCloud.lsr, enabled=true
 https://rule.kelee.one/Loon/GitHub.lsr, policy=全球故障转移, tag=GitHub, enabled=true
 https://rule.kelee.one/Loon/Netflix.lsr, policy=新国场景, tag=Netflix, enabled=true
 https://rule.kelee.one/Loon/YouTube.lsr, policy=美国场景, tag=Youtube, enabled=true
@@ -123,6 +122,7 @@ https://rule.kelee.one/Loon/Instagram.lsr, policy=场景选择, tag=Instagram, e
 https://rule.kelee.one/Loon/Spotify.lsr, policy=全球故障转移, tag=Spotify, enabled=true
 https://rule.kelee.one/Loon/Google.lsr, policy=美国场景, tag=Google, enabled=true
 https://rule.kelee.one/Loon/OneDrive.lsr, policy=全球故障转移, tag=OneDrive, enabled=true
+https://rule.kelee.one/Loon/LinkedIn.lsr, policy=新国场景, tag=LinkedIn.lsr, enabled=true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=大陆场景, tag=CN REGION, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/HSBCReward.list, policy=香港场景, tag=HSBC Reward+, enabled=true
