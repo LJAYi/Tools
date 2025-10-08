@@ -1,0 +1,6 @@
+# NAME: CNCBI
+# AUTHOR: LJAY
+# REF: https://github.com/specialmenfo/Surge/blob/master/Personal/Sgmodule/List/HongKongBank.list
+# UPDATED: 2025-10-08 20:09:57
+DOMAIN,ibanking.cncbinternational.com
+DOMAIN-SUFFIX,cncbinternational.com
