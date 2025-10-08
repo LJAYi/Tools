@@ -1,0 +1,10 @@
+# NAME: HSBC Reward+
+# AUTHOR: LJAY
+# REF: https://github.com/YooJuZ/rule/blob/main/chase.list
+# UPDATED: 2025-10-08 19:14:54
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-SUFFIX,chasepaymentechhostedpay.com
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,split.io
+DOMAIN-SUFFIX,zimperium.com
