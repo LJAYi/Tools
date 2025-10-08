@@ -125,6 +125,7 @@ https://rule.kelee.one/Loon/Google.lsr, policy=美国场景, tag=Google, enabled
 https://rule.kelee.one/Loon/OneDrive.lsr, policy=全球故障转移, tag=OneDrive, enabled=true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=大陆场景, tag=CN REGION, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Loon/HSBCReward.list, policy=香港场景, tag=HSBC Reward+, enabled=true
 
 [Host]
 
