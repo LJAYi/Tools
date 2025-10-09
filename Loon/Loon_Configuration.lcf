@@ -52,7 +52,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 韩国场景 = select,韩国时延优选,韩国故障转移,韩国负载均衡,DIRECT,韩国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
 新国场景 = select,新国时延优选,新国故障转移,新国负载均衡,DIRECT,新国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国场景 = select,美国时延优选,美国故障转移,美国负载均衡,DIRECT,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-全球场景 = select,DIRECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+全球场景 = select,全球故障转移,DIRECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 
 # --------------------------------
 # 自动策略
