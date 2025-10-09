@@ -83,7 +83,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 
 # --------------------------------
 # 兜底后备策略
-兜底后备策略 = select,DIRECT,香港时延优选,台湾时延优选,日本时延优选,韩国时延优选,新国时延优选,美国时延优选,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+兜底后备策略 = select,DIRECT,场景选择,全球故障转移,香港时延优选,台湾时延优选,日本时延优选,韩国时延优选,新国时延优选,美国时延优选,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 
 [Rule]
 # Local Rule
@@ -100,7 +100,7 @@ IP-CIDR,28.0.0.1/8,DIRECT
 IP-CIDR,198.18.0.1/16,DIRECT
 IP-CIDR,198.18.0.0/15,DIRECT
 IP-CIDR6,fc00::/18,DIRECT
-FINAL,场景选择
+FINAL,兜底后备策略
 
 [Remote Rule]
 https://rule.kelee.one/Loon/WeChat.lsr, policy=DIRECT, tag=WeChat.lsr, enabled=true
