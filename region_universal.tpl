@@ -40,7 +40,15 @@ dns-server = system
 
 [Proxy Group]
 {% for g in local.custom_proxy_group %}
-{{ g.name }} = {{ g.type }}, {{ g.proxies | join(", ") }}
+{% set proxies = "" %}
+{% for p in g.proxies %}
+  {% if loop.index0 == 0 %}
+    {% set proxies = p %}
+  {% else %}
+    {% set proxies = proxies + ", " + p %}
+  {% endif %}
+{% endfor %}
+{{ g.name }} = {{ g.type }}, {{ proxies }}
 {% endfor %}
 
 [Rule]
@@ -56,7 +64,15 @@ dns-server = system
 
 [policy]
 {% for g in local.custom_proxy_group %}
-{{ g.name }} = {{ g.type }}, {{ g.proxies | join(", ") }}
+{% set proxies = "" %}
+{% for p in g.proxies %}
+  {% if loop.index0 == 0 %}
+    {% set proxies = p %}
+  {% else %}
+    {% set proxies = proxies + ", " + p %}
+  {% endif %}
+{% endfor %}
+{{ g.name }} = {{ g.type }}, {{ proxies }}
 {% endfor %}
 
 [filter_remote]
