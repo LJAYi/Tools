@@ -14,7 +14,7 @@ external-controller: 127.0.0.1:9090
 
 proxy-groups:
 {% for g in local.custom_proxy_group %}
-  - name: {{ g.name }}
+  - name: "{{ g.name }}"
     type: {{ g.type }}
     {% if g.url %}url: {{ g.url }}{% endif %}
     {% if g.interval %}interval: {{ g.interval }}{% endif %}
@@ -31,18 +31,18 @@ rules:
   - {{ r }}
 {% endfor %}
 
-{% else %}
-  {% if request.target == "loon" %}
+{% elif request.target == "loon" %}
 # Loon 输出配置
 [General]
 allow-lan = true
 dns-server = system
+network_check_url = http://connectivitycheck.gstatic.com/generate_204
 
 [Proxy Group]
 {% for g in local.custom_proxy_group %}
 {% set proxies = "" %}
 {% for p in g.proxies %}
-  {% if loop.index0 == 0 %}
+  {% if loop.first %}
     {% set proxies = p %}
   {% else %}
     {% set proxies = proxies + ", " + p %}
@@ -56,17 +56,17 @@ dns-server = system
 {{ r }}
 {% endfor %}
 
-  {% else %}
-    {% if request.target == "quanx" %}
+{% elif request.target == "quanx" %}
 # Quantumult X 输出配置
 [general]
+server_check_url = http://connectivitycheck.gstatic.com/generate_204
 dns-server = system
 
 [policy]
 {% for g in local.custom_proxy_group %}
 {% set proxies = "" %}
 {% for p in g.proxies %}
-  {% if loop.index0 == 0 %}
+  {% if loop.first %}
     {% set proxies = p %}
   {% else %}
     {% set proxies = proxies + ", " + p %}
@@ -79,8 +79,7 @@ dns-server = system
 {% for r in local.ruleset %}
 {{ r }}
 {% endfor %}
-    {% else %}
-# 未识别的 target: {{ request.target }}
-    {% endif %}
-  {% endif %}
+
+{% else %}
+# 未识别的目标类型: {{ request.target }}
 {% endif %}
