@@ -1,12 +1,10 @@
 {# =====================================================
-region_universal.tpl
-通用模板：支持 Clash / Loon / Quantumult X
+ region_universal.tpl
+ 通用模板：支持 Clash / Loon / Quantumult X
 ===================================================== #}
 
 {% if request.target == "clash" %}
-# =========================
 # Clash 输出配置
-# =========================
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -33,10 +31,9 @@ rules:
   - {{ r }}
 {% endfor %}
 
-{% elif request.target == "loon" %}
-# =========================
+{% else %}
+  {% if request.target == "loon" %}
 # Loon 输出配置
-# =========================
 [General]
 allow-lan = true
 dns-server = system
@@ -51,10 +48,9 @@ dns-server = system
 {{ r }}
 {% endfor %}
 
-{% elif request.target == "quanx" %}
-# =========================
+  {% else %}
+    {% if request.target == "quanx" %}
 # Quantumult X 输出配置
-# =========================
 [general]
 dns-server = system
 
@@ -67,7 +63,8 @@ dns-server = system
 {% for r in local.ruleset %}
 {{ r }}
 {% endfor %}
-
-{% else %}
-# Unknown target: {{ request.target }}
+    {% else %}
+# 未识别的 target: {{ request.target }}
+    {% endif %}
+  {% endif %}
 {% endif %}
