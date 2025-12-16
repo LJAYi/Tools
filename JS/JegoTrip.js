@@ -2,593 +2,375 @@
 JegoTrip
 */
 
-// --- Loon 参数 shim ---
-if (typeof process === 'undefined') process = { env: {} };
-($argument || '').split(/[,&\n ]+/).filter(Boolean).forEach(p => {
-  const i = p.indexOf('=');
-  if (i > 0) {
-    const k = p.slice(0, i).trim();
-    const v = p.slice(i + 1).trim();
-    process.env[k] = v;
-  }
-});
+// --- 运行环境兼容 + 参数 shim（QingLong/Node + Loon/Surge/QuanX）---
+if (typeof process === 'undefined') globalThis.process = { env: {} };
+process.env = process.env || {};
+
+// Loon/QuanX/Surge 里可用 $argument；Node/青龙里可能没有
+const _arg = (typeof $argument === 'undefined') ? '' : String($argument || '');
+
+// 支持：JEGO_TOKEN=xxx&xx=yy  或  JEGO_TOKEN=xxx,xx=yy  或换行/空格分隔
+parseArgumentEnv(_arg);
 
 //https://github.com/jacobhere/Jego_sign/blob/main/Jego_sign.js
 
 const $ = new Env('无忧行');
-const token = process.env.JEGO_TOKEN;
+const tokenRaw = process.env.JEGO_TOKEN || $.getData('JEGO_TOKEN') || '';
+const tokenList = splitTokens(tokenRaw);
+if (tokenList.length === 0) {
+  $.msg($.name, '', '未获取到 JEGO_TOKEN：\n- 青龙请在环境变量里加 JEGO_TOKEN\n- Loon 请在脚本参数里填：JEGO_TOKEN=xxxx');
+  $.done();
+}
 $.secretKey = 'online_jego_h5';
 $.secretVal = '93EFE107DDE6DE51';
-const currentTimestamp = Date.now()*1000+765; // 使用标准毫秒时间戳
-const queryParams = {
-    token: token,
-    lang: 'zh_CN',
-    timestamp: currentTimestamp,
-
-};
+// 注意：此处 timestamp 为原脚本逻辑（毫秒 * 1000 + 765），不要随意改动以免影响签名校验
+let token = '';
+let currentTimestamp = 0;
+let signature = '';
 
 $.CryptoJS = initCryptoJS();
+const stream = Stream();
+
+const DEBUG = isTruthy(process.env.DEBUG || $.getData('DEBUG'));
+const RETRY_TIMES = parseInt(process.env.RETRY || $.getData('RETRY') || '1', 10) || 0; // 失败重试次数（不含首次）
+const RETRY_DELAY_MS = parseInt(process.env.RETRY_DELAY || $.getData('RETRY_DELAY') || '800', 10) || 800;
 
 // 新增：生成签名的函数
 function generateSign(params) {
-  // 1. 获取所有参数 key
-  const keys = Object.keys(params);
-  // 2. 按字母顺序排序 key
-  keys.sort();
-  // 3. 拼接 key=value&...
-  let queryString = '';
-  for (let i = 0; i < keys.length; i++) {
-    const key = keys[i];
-    queryString += `${key}=${params[key]}`;
-    if (i < keys.length - 1) {
-      queryString += '&';
-    }
-  }
+  const keys = Object.keys(params).sort();
+  const queryString = keys.map((key) => `${key}=${params[key]}`).join('&');
   // 4. 拼接盐值
   const stringToSign = queryString + $.secretVal;
   // 5. 计算 SHA1 哈希
   const signature = $.CryptoJS.SHA1(stringToSign).toString(); // 使用 CryptoJS 计算 SHA1
   return signature;
 }
-// 生成签名
-const signature = generateSign(queryParams);
 !(async () => {
-  $.signs = []; // 签到信息
-  $.sign_result = [];
-  $.everydayTaskList = []; // 每日任务列表
-  $.wealTaskList = []; // 福利任务列表
-  $.specialTaskList = []; //特殊任务列表
+  const summaries = [];
+  let anyFailed = false;
 
-    //await queryRedDot();
-    //await expireRewardQuery();
-  let signInFailed = false; // Initialize failure flag
-    await querySign();
-    //await querySpecialTask();
-    //await queryEveryDataTask();
-    //await queryWealTask();
-    //await unclaimedTask();
-    //await querySign();
+  for (let i = 0; i < tokenList.length; i++) {
+    prepareAuth(tokenList[i]);
+    const { desc, signInFailed } = await runOnce(i + 1, tokenList.length);
+    summaries.push(desc);
+    anyFailed = anyFailed || signInFailed;
+  }
 
-  // {
-  //   "reward" : "A001-6",
-  //   "signGroupId" : 4,
-  //   "isSign" : 2, // 1:已签到 2:未签到 3:当天已签到
-  //   "id" : 23,
-  //   "eventCode" : "1014",
-  //   "rewardExp" : "",
-  //   "rewardCoin" : "6",
-  //   "signDescribe" : "",
-  //   "completeNumber" : 2, // 次序
-  //   "grantType" : 1,
-  //   "signMysteryAwardVos" : ""
-  // }
-const alreadySignedTodayEntry = $.signs.find(signInfo => signInfo.isSign === 3);
-
- if (alreadySignedTodayEntry) {     
-    // Found an entry with isSign: 3, means already signed in today
-    console.log(`今天已签到 (找到今天的签到的记录, Day ${alreadySignedTodayEntry.completeNumber})`);
-    // Use the rewardCoin from the entry marked as signed today
-    $.desc = `签到失败：今日已签到‼️ 无忧币 +${alreadySignedTodayEntry.rewardCoin}`;
-    signInFailed = true;
- } else {
-        const targetSignInEntry = $.signs.slice().reverse().find(signInfo => signInfo.isSign === 2);
-        if (targetSignInEntry) {
-        // Found the LAST entry to sign in
-        console.log(`找到最后一个可签到项: Day ${targetSignInEntry.completeNumber}`);
-        const { rewardCoin, completeNumber } = targetSignInEntry;
-
-        console.log('尝试签到...');
-        // Step 3: Perform the sign-in
-        await sign(targetSignInEntry); // Ensure this function populates $.sign_result and potentially $.sign
-
-        // Step 4: Check the result
-        if ($.sign_result && typeof $.sign_result.code !== 'undefined') {
-            console.log(`签到结果代码: ${$.sign_result.code}`);
-
-            if ($.sign_result.code == 0) {
-                // Sign-in successful
-                let rewardDetails = `无忧币 +${rewardCoin}`;
-                 $.desc = `签到成功：已连签${completeNumber}天，${rewardDetails}🎉`;
-
-            } else {
-                // Sign-in failed according to API response
-                const errorMsg = $.sign_result.message || '请稍后重试';
-                $.desc = `签到失败：${errorMsg} (Code: ${$.sign_result.code})`;
-                signInFailed = true;
-            }
-        } else {
-             console.error('签到失败：$.sign_result 或 $.sign_result.code 未定义');
-             $.desc = `签到失败：无法获取签到结果`;
-             signInFailed = true;
-        }
-
-    } else {
-        // No entry with isSign: 3 and no entry with isSign: 2 found.
-        console.log('未找到可签到的项 (isSign === 2 not found)');
-        $.desc = `签到失败：未找到可签到的日期`;
-        signInFailed = true;
-    }
- }
-
-  
-  await expireRewardQuery();
-  let total = $.expireRewardQuery.tripcoins;
-  $.desc += "\n" + [`无忧币总计：${total}💰`, $.expireRewardQuery.rewardTip, $.expireRewardQuery.tripcoinsTip].filter(Boolean).join("\n");
-  $.msg($.name, '', $.desc);
-  if(signInFailed) {
+  const finalDesc = summaries.filter(Boolean).join('\n\n');
+  $.msg($.name, '', finalDesc);
+  if (anyFailed) {
     console.log("签到失败，发送通知...");
-    QLAPI.systemNotify({title:$.name, content:$.desc});
+    systemNotifySafe($.name, finalDesc);
   }
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done());
 
-function querySign() {
+function prepareAuth(nextToken) {
+  token = String(nextToken || '').trim();
+  currentTimestamp = nowTimestamp();
+  signature = generateSign({ token, lang: 'zh_CN', timestamp: currentTimestamp });
+}
+
+async function runOnce(accountIndex, accountTotal) {
+  let signInFailed = false;
+  let desc = '';
+  let signs;
+  try {
+    signs = await querySign();
+  } catch (e) {
+    const msg = (e && e.message) ? e.message : String(e || 'unknown error');
+    return { desc: (accountTotal > 1 ? `账号 ${accountIndex}/${accountTotal}\n` : '') + `签到失败：查询签到列表异常\n${msg}`, signInFailed: true };
+  }
+
+  const alreadySignedTodayEntry = (signs || []).find((signInfo) => signInfo.isSign === 3);
+  if (alreadySignedTodayEntry) {
+    console.log(`今天已签到 (找到今天的签到的记录, Day ${alreadySignedTodayEntry.completeNumber})`);
+    desc = `签到失败：今日已签到‼️ 无忧币 +${alreadySignedTodayEntry.rewardCoin}`;
+    signInFailed = true;
+  } else {
+    const targetSignInEntry = (signs || []).slice().reverse().find((signInfo) => signInfo.isSign === 2);
+    if (targetSignInEntry) {
+      console.log(`找到最后一个可签到项: Day ${targetSignInEntry.completeNumber}`);
+      const { rewardCoin, completeNumber } = targetSignInEntry;
+
+      console.log('尝试签到...');
+      let signResp;
+      try {
+        signResp = await sign(targetSignInEntry);
+      } catch (e) {
+        const msg = (e && e.message) ? e.message : String(e || 'unknown error');
+        desc = `签到失败：请求异常\n${msg}`;
+        signInFailed = true;
+        signResp = null;
+      }
+
+      if (signResp && signResp.raw && typeof signResp.raw.code !== 'undefined') {
+        console.log(`签到结果代码: ${signResp.raw.code}`);
+        if (signResp.raw.code == 0) {
+          desc = `签到成功：已连签${completeNumber}天，无忧币 +${rewardCoin}🎉`;
+        } else {
+          const errorMsg = signResp.raw.message || '请稍后重试';
+          desc = `签到失败：${errorMsg} (Code: ${signResp.raw.code})`;
+          signInFailed = true;
+        }
+      } else {
+        console.error('签到失败：$.sign_result 或 $.sign_result.code 未定义');
+        desc = `签到失败：无法获取签到结果`;
+        signInFailed = true;
+      }
+    } else {
+      console.log('未找到可签到的项 (isSign === 2 not found)');
+      desc = `签到失败：未找到可签到的日期`;
+      signInFailed = true;
+    }
+  }
+
+  let expire = null;
+  try {
+    expire = await expireRewardQuery();
+  } catch (e) {
+    const msg = (e && e.message) ? e.message : String(e || 'unknown error');
+    desc += `\n\n无忧币查询失败：${msg}`;
+    signInFailed = true;
+  }
+  if (expire) {
+    const total = expire.tripcoins;
+    desc += "\n" + [`无忧币总计：${total}💰`, expire.rewardTip, expire.tripcoinsTip].filter(Boolean).join("\n");
+  }
+
+  const prefix = accountTotal > 1 ? `账号 ${accountIndex}/${accountTotal}\n` : '';
+  return { desc: prefix + desc, signInFailed };
+}
+
+function debugLog(...args) {
+  if (DEBUG) console.log(...args);
+}
+
+function isTruthy(value) {
+  return /^(1|true|yes|y|on)$/i.test(String(value || '').trim());
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function withRetry(action, { retries = RETRY_TIMES, delayMs = RETRY_DELAY_MS, label = 'request' } = {}) {
+  let lastErr;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      return await action(attempt);
+    } catch (e) {
+      lastErr = e;
+      if (attempt >= retries) break;
+      await sleep(delayMs * (attempt + 1));
+      debugLog(`[retry] ${label} attempt=${attempt + 1} err=${(e && e.message) ? e.message : e}`);
+    }
+  }
+  throw lastErr;
+}
+
+function httpPost(options) {
   return new Promise((resolve, reject) => {
-
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/sign/querySign?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    //console.log(url);
-
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
     $.post(options, (err, resp, data) => {
-      try {
-        //console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
+      if (err) return reject(err);
+      resolve({ resp, data });
     });
   });
 }
 
-function queryRedDot() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/task/queryRedDot?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    console.log(url);
-
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
+function buildApp3Url(path, timestamp, signValue) {
+  return `https://app3.jegotrip.com.cn${path}?token=${token}&lang=zh_CN&timestamp=${timestamp}&sign=${signValue}`;
 }
 
-
-function expireRewardQuery() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app3.jegotrip.com.cn/api/service/member/v1/expireRewardQuery?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    console.log(url);
-
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
+function buildAppUrl(path) {
+  return `https://app.jegotrip.com.cn${path}?token=${token}&h_token=${token}&lang=zh_CN`;
 }
 
-
-function querySpecialTask() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/task/querySpecialTask?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    console.log(url);
-
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
+function commonHeaders(host) {
+  return {
+    Accept: `*/*`,
+    Origin: `https://cdn.jegotrip.com.cn`,
+    'Accept-Encoding': `gzip, deflate, br`,
+    Connection: `keep-alive`,
+    'Content-Type': `application/json`,
+    Host: host,
+    'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
+    Referer: `https://cdn.jegotrip.com.cn/`,
+    'Cache-Control': `max-age=0`,
+    'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
+  };
 }
 
-function queryWealTask() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/task/queryWealTask?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    console.log(url);
+async function app3Encrypted(path, payload, auth) {
+  const timestamp = (auth && auth.timestamp) ? auth.timestamp : currentTimestamp;
+  const signValue = (auth && auth.signature) ? auth.signature : signature;
+  const url = buildApp3Url(path, timestamp, signValue);
+  const body = JSON.stringify(stream.Encrypt(payload || {}));
+  debugLog('[app3] url=', url);
+  const options = { url, headers: commonHeaders('app3.jegotrip.com.cn'), body, https: { rejectUnauthorized: false } };
 
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
+  const { data } = await withRetry(() => httpPost(options), { label: `app3 ${path}` });
+  let raw;
+  try {
+    raw = JSON.parse(data);
+  } catch (e) {
+    throw new Error(`响应解析失败: ${path}\n${safeSnippet(data)}`);
+  }
+  let decrypted;
+  try {
+    decrypted = stream.Decrypt(raw.sec, raw.body);
+  } catch (e) {
+    const code = (raw && typeof raw.code !== 'undefined') ? `code=${raw.code}` : '';
+    const message = (raw && raw.message) ? `message=${raw.message}` : '';
+    throw new Error(`响应解密失败: ${path}${[code, message].filter(Boolean).length ? ` (${[code, message].filter(Boolean).join(', ')})` : ''}\n${safeSnippet(data)}`);
+  }
+  return { raw, body: decrypted };
 }
 
-function queryEveryDataTask() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/task/queryEveryDataTask?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    console.log(url);
+async function appPost(path, payload) {
+  const url = buildAppUrl(path);
+  debugLog('[app] url=', url);
+  const options = {
+    url,
+    headers: commonHeaders('app.jegotrip.com.cn'),
+    https: { rejectUnauthorized: false },
+  };
+  if (typeof payload !== 'undefined') options.body = JSON.stringify(payload);
 
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
-}
-
-
-function unclaimedTask() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/task/unclaimed?token=${token}&lang=zh_CN&timestamp=${currentTimestamp}&sign=${signature}`;
-    console.log(url);
-
-    const body = JSON.stringify(Stream().Encrypt({}));
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        console.log(data);
-        let res = JSON.parse(data);
-        res = Stream().Decrypt(res.sec, res.body);
-        $.signs = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
-}
-
-function sign(signInfo) {
-  return new Promise(async (resolve) => {
-    const currentTimestamp1 = Date.now()*1000+765; // 使用标准毫秒时间戳
-    const queryParams1 = {
-      token: token,
-      lang: 'zh_CN',
-      timestamp: currentTimestamp1,
-
-    };
-    const signature1 = generateSign(queryParams1);
-
-    const url = `https://app3.jegotrip.com.cn/api/service/v1/mission/sign/userSign?token=${token}&lang=zh_CN&timestamp=${currentTimestamp1}&sign=${signature1}`;
-    const body = JSON.stringify(
-      //Stream().Encrypt({signConfigId: signInfo.id })
-      Stream().Encrypt({signConfigId: signInfo.id })
-    );
-    const options = {
-      url: url,
-      headers: {
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Accept: `application/json`,
-        Host: `app3.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-      body: body,
-      https: { rejectUnauthorized: false }
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        // console.log(data);
-
-        let res = JSON.parse(data);
-        $.sign_result = res;
-        res = Stream().Decrypt(res.sec, res.body);
-        
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
-}
-
-function reslutionExtraReward(value) {
-  switch (value.rewardType) {
-    case 'A001': //无忧币
-      return `无忧币`;
-      break;
-    case 'A002': //经验值
-      return `经验值`;
-      break;
-    case 'A003': //优惠券
-      return `优惠券: ${value.rewardName}`;
-      break;
+  const { data } = await withRetry(() => httpPost(options), { label: `app ${path}` });
+  try {
+    return JSON.parse(data);
+  } catch (e) {
+    throw new Error(`响应解析失败: ${path}\n${safeSnippet(data)}`);
   }
 }
 
-function queryEveryDataTask() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app.jegotrip.com.cn/api/service/v1/mission/task/queryEveryDataTask?token=${token}&h_token=${token}&lang=zh_CN`;
-
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/4.0 MDN Example`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        let res = JSON.parse(data);
-        $.receiveTask = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
+function safeSnippet(text, maxLen = 300) {
+  const s = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!s) return '';
+  return s.length > maxLen ? `${s.slice(0, maxLen)}…` : s;
 }
 
-function receiveTask(item) {
-  return new Promise((resolve, reject) => {
-    const url = `https://app.jegotrip.com.cn/api/service/v1/mission/task/receiveTask?token=${token}&h_token=${token}&lang=zh_CN`;
-
-    const body = {
-      taskId: item.id,
-      taskType: item.taskType,
-      eventCode: item.eventCode,
-      restrictType: item.restrictType,
-    };
-
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        'Content-Type': `application/json`,
-        Connection: `keep-alive`,
-        Host: `app.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/4.0 MDN Example`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-        'Cache-Control': `max-age=0`,
-      },
-      body,
-    };
-
-    $.post(options, (err, resp, data) => {
-      try {
-        let res = JSON.parse(data);
-        $.receiveTask = res;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
-      }
-    });
-  });
+async function querySign() {
+  const { body } = await app3Encrypted('/api/service/v1/mission/sign/querySign', {});
+  return body;
 }
 
-function expireRewardQuery() {
-  return new Promise((resolve, reject) => {
-    const url = `https://app.jegotrip.com.cn/api/service/member/v1/expireRewardQuery?token=${token}&h_token=${token}&lang=zh_CN`;
+async function queryRedDot() {
+  const { body } = await app3Encrypted('/api/service/v1/mission/task/queryRedDot', {});
+  $.redDotInfo = body;
+  return body;
+}
 
-    const options = {
-      url: url,
-      headers: {
-        Accept: `*/*`,
-        Origin: `https://cdn.jegotrip.com.cn`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        Connection: `keep-alive`,
-        'Content-Type': `application/json`,
-        Host: `app.jegotrip.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-        Referer: `https://cdn.jegotrip.com.cn/`,
-        'Cache-Control': `max-age=0`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-      },
-    };
+async function expireRewardQueryApp3() {
+  const { body } = await app3Encrypted('/api/service/member/v1/expireRewardQuery', {});
+  $.expireRewardInfo = body;
+  return body;
+}
 
-    $.post(options, (err, resp, data) => {
-      try {
-        let res = JSON.parse(data);
-        $.expireRewardQuery = res.body;
-      } catch (err) {
-        console.log(err);
-      } finally {
-        resolve(resp);
+async function querySpecialTask() {
+  const { body } = await app3Encrypted('/api/service/v1/mission/task/querySpecialTask', {});
+  $.specialTaskList = body;
+  return body;
+}
+
+async function queryWealTask() {
+  const { body } = await app3Encrypted('/api/service/v1/mission/task/queryWealTask', {});
+  $.wealTaskList = body;
+  return body;
+}
+
+async function queryEveryDataTaskApp3() {
+  const { body } = await app3Encrypted('/api/service/v1/mission/task/queryEveryDataTask', {});
+  $.everydayTaskList = body;
+  return body;
+}
+
+async function unclaimedTask() {
+  const { body } = await app3Encrypted('/api/service/v1/mission/task/unclaimed', {});
+  $.unclaimedTaskList = body;
+  return body;
+}
+
+async function sign(signInfo) {
+  const ts = nowTimestamp();
+  const sig = generateSign({ token, lang: 'zh_CN', timestamp: ts });
+  return await app3Encrypted(
+    '/api/service/v1/mission/sign/userSign',
+    { signConfigId: signInfo.id },
+    { timestamp: ts, signature: sig }
+  );
+}
+
+function reslutionExtraReward(value) {
+  if (!value) return '';
+  if (value.rewardType === 'A001') return `无忧币`;
+  if (value.rewardType === 'A002') return `经验值`;
+  if (value.rewardType === 'A003') return `优惠券: ${value.rewardName}`;
+  return '';
+}
+
+async function queryEveryDataTask() {
+  const res = await appPost('/api/service/v1/mission/task/queryEveryDataTask');
+  $.receiveTask = res;
+  return res;
+}
+
+async function receiveTask(item) {
+  const payload = {
+    taskId: item.id,
+    taskType: item.taskType,
+    eventCode: item.eventCode,
+    restrictType: item.restrictType,
+  };
+  const res = await appPost('/api/service/v1/mission/task/receiveTask', payload);
+  $.receiveTask = res;
+  return res;
+}
+
+async function expireRewardQuery() {
+  const res = await appPost('/api/service/member/v1/expireRewardQuery');
+  $.expireRewardQuery = res && res.body ? res.body : res;
+  return $.expireRewardQuery;
+}
+
+function nowTimestamp() {
+  return Date.now() * 1000 + 765;
+}
+
+function parseArgumentEnv(argumentString) {
+  String(argumentString || '')
+    .split(/[,&\n ]+/)
+    .filter(Boolean)
+    .forEach((part) => {
+      const index = part.indexOf('=');
+      if (index <= 0) return;
+      const key = part.slice(0, index).trim();
+      const value = part.slice(index + 1).trim();
+      if (!key) return;
+      if (key === 'JEGO_TOKEN' && process.env[key]) {
+        process.env[key] = `${process.env[key]}\n${value}`;
+        return;
       }
+      process.env[key] = value;
     });
-  });
+}
+
+function systemNotifySafe(title, content) {
+  try {
+    if (typeof QLAPI !== 'undefined' && QLAPI && typeof QLAPI.systemNotify === 'function') {
+      QLAPI.systemNotify({ title, content });
+    }
+  } catch (e) {}
+}
+
+function splitTokens(tokenString) {
+  const tokens = String(tokenString || '')
+    .split(/[\n|,&\s]+/)
+    .map((t) => t.trim())
+    .filter(Boolean);
+  return Array.from(new Set(tokens));
 }
 
 function Stream() {
