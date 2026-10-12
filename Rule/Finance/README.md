@@ -25,4 +25,4 @@ https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/Payments/Zelle.l
 
 After editing a source file, run `scripts/build-us-finance.sh` and `scripts/check-us-finance.sh`.
 
-Previously published top-level `.list` files remain available for existing subscribers. `Rule/Mihomo/` has not yet been migrated to this layout.
+`Rule/Mihomo/` has not yet been migrated to this layout.

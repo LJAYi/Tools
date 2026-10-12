@@ -13,7 +13,7 @@
 
 配置中的 Chase、Capital One、Amex、Bank of America、Citi、Discover、Wells Fargo、US Bank、PNC、Truist、Zelle、各家券商和三大征信机构都是独立规则与独立策略组。它们默认继承“美国金融”，因此日常只需调整一个总入口；需要时也可以单独将某家机构切换为 `DIRECT`、美国场景或其他场景。
 
-不要同时加入 `Finance.list`、`StockBrokerageUS.list` 或 `CreditBureausUS.list` 等聚合规则，否则排在前面的聚合规则会覆盖逐家设置。更多可按需添加的机构 URL 见 `Rule/Finance/README.md`。
+不要同时加入 `Finance.list`、`USBrokerages/USBrokerages.list` 或 `USCredit/USCredit.list` 等聚合规则，否则排在前面的聚合规则会覆盖逐家设置。更多可按需添加的机构 URL 见 `Rule/Finance/README.md`。
 
 配置不会保存订阅地址、账号或节点凭据。地区分组会从 Shadowrocket 当前已有节点中自动筛选。
 
