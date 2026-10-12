@@ -1,0 +1,7970 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "apple-events.akamaized.net"
+      ]
+    },
+    {
+      "domain": [
+        "appleworldwidedeveloper.hb-api.omtrdc.net"
+      ]
+    },
+    {
+      "domain": [
+        "appleworldwidedeveloper.sc.omtrdc.net"
+      ]
+    },
+    {
+      "domain": [
+        "beatselectronicsllc.tt.omtrdc.net"
+      ]
+    },
+    {
+      "domain": [
+        "e16991.b.akamaiedge.net"
+      ]
+    },
+    {
+      "domain": [
+        "edge.apple"
+      ]
+    },
+    {
+      "domain": [
+        "icons.axm-usercontent-apple.com"
+      ]
+    },
+    {
+      "domain": [
+        "lookup-api.apple.com.edgekey.net"
+      ]
+    },
+    {
+      "domain": [
+        "p-events-delivery.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "100beatscheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "1monsterbeatsbydreus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "1to1computing.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "1to1conference.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013beatsbydrdreonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013beatsbydrdreshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013beatsbydreshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013beatshdcybermonday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013cheapestbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013newbeatsworld.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2013pascherbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2014cheapbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2beatsdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2buybeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "2drdrebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "40shopping.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "4beatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "5beatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "5lml.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "a0pple.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aaagradeheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aanaan.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aapl.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abcheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aeasyshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airmay.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airport.brussels"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airport.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airport.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airsupportapp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airtunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airtunes.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "airtunes.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ajtalk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "akadns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "albeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "alchemysynth.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "annstores.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aokwholesale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ap0le.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apole.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "app0le.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appl-e.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appl4e.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appla.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appldnld.apple.com.edgesuite.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-darwin.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-darwin.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-darwin.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-dns.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-dns.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-dns.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-enews.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-expo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-expo.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-hk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-ibooks.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-inc.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-mapkit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-maps.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-online.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-usa.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ae"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.at"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.be"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.bg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.bs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.cl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.cm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.cr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.mz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.th"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.af"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.bo"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.cdn20.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.do"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.gy"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.jm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.lk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.mg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.mwcloudcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.mwcname.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.mx"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.my"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.pa"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.pe"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.pr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.py"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.sg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.sv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.tr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.com.uy"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.cz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.dk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ee"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.fi"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.hamburg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.hn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.hr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ie"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.in"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.is"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.it"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.jo"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.lk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.lt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.lv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.me"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.my"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.net.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.nl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.no"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.pk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ro"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.sa"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.sg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.si"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.sk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.so"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.tt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.xn--czr694b"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.xn--fiqs8s"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.xyz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleafrica.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleantilles.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleaustralia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleaustralia.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleaustralia.net.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applebk.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecarbon.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecard.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecentar.co.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecentar.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecenter.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecenter.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecentre.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecentre.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleclub.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecom.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer-imac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.co.in"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputer.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputerimac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputerinc.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecomputers.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecoronavirus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appledns.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appledns.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleexpo.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleexpo.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applefilmaker.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applefilmmaker.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applefinalcutproworld.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applefinalcutproworld.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applefinalcutproworld.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applehongkong.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applehongkong.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleinclegal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleipodsettlement.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleiservices.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applelink.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemagickeyboard.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemalaysia.com.my"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemasters.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleonline.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleoriginalproductions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleos.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepencil.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepodcasts.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepremiumreseller.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepremiumresellers.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applereach.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applereach.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apples-msk.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleschoolcontent.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applescreensavers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applescript.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleshare.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleshop.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applesiri.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applesurveys.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleswift.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletaiwan.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletips.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleweb.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applexpo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applezh.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applf.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applfe.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applle.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applw.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appmediagroup.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appule.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appye.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apyle.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aucheapbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "audiobeatsau.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "audiobeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "audiomonsterbeatsonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "auricularemonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "auricularesbeatsbaratosshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "auricularesbeatsmarkt.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ausbeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bag-glasses1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bandgirlz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "baxsound.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bbestmall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatbd.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatbydre2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatbydreheadphonesonsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatbydrekopen.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatbydremonster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatbydreuk2014.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatdrdres.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatfactoryoutlets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatmonstersaustralia.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-by-dre-australia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydrdre.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydre-mall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydrecheapsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydreoutletonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydreoutletsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydreoutletsale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydreoutletssale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydrestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-bydreuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-deal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-dre-us.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-headphones-buy-cheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-headphones.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-sale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-seller.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats-soaho.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats1.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats1.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats1.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats1.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats123.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats2.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats4.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats4.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats4outlets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beats4salecheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsallsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsaudifonos.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsaudiobydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsaudiobydre.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsaudios.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbeatsmonster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbestdeals.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsblackfridaydeals.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsblackfridayretails.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsboxingdayuksale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre-headphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre-officials5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre-online.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre-onsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre-store.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre-store.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdre4sale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdrebiz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdrecustom.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdredanmark.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdremall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdreoutlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdres.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdresale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdrestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrdreus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-beatsheadphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-chen.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-club.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-headphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-headphonesshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-mall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-outlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-outletsale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-outletstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-sell.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-store.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-studio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre-us.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre2081.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre411.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydre4usales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreauofficial.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreausale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreaustralia-sale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreaustraliaonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreaustraliaonlines.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreaustraliasales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrebeatsby.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreblackfriday2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreblackfridaypro.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreboxingdayca.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecasquesfr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecheap-outletstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecheaper.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecheaponlinesales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecolors.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecustomwireless.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecybermondaydeals2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrecybermondaydeals2013.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydredanmarks.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydredealsblackfriday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydredealscybermonday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrediscount.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrediscountonline.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydredr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreexecutivesale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreformall2013-nl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreforsalesonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreforshop2013-nl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreforstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreforyououtlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrefr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrefrcasquepascher.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrefriday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydregot.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrehd.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrehd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreheadphones-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreheadphonesolo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrehut.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreinexpensive.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreireland-sales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreirelandonlines.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreirelandsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreirelandsonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydremall2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydremonsteraustralia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrenls.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrenorge1.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreofficialdanmark.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreoksale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreol.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreonlie2013-nl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreonlines-ireland.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreonlines-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreonlinesale-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreoordopjes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreoslo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreoutletsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreoutletscheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrerealstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydres-shop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresale-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresalemall2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresaleonlines-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresales.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresalesonline-australia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresdanmark.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreshop-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreshops.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresingapores.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresingaporesale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresold.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresolohdonline-canada.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresonline-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrespeakers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydressale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydressolo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydresstudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrestorevip.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrestudio-australia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrestudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydretoutlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreuk.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydreus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrevipde.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrew.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbydrsmonsterinusa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbymusic.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbysdrbre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsbysdrdres.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatscasque-france.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatscheap-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatscheap-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatscheapforsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatscollection2014.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatscustomblackfriday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdanmark2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdre-headphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdre-it.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdre-solo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdre2014.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdrecuffie.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdrekaufenschweiz.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrdreneon.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdre-monster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdre.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdre4cheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrecheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdredreheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdreforsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdreinau.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdremonster-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdrenewcolorful4usale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdreoutletsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdresale2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdresalestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdresolo2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsdreus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsearbudsheadphoness.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatselectronic.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatselectronics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsep.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsep.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsep.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsfacstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsfactoroutlets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsfactorycollection.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsfactoryoutles.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsforcheap-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsforme.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsfranceofficiel.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphones-discount.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphones1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphones2u.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphonesale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphonesdealer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphonesforcheap.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphonesonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphoness.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphonestudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsheadphonesusamall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatshopuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsincanada.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsinsingapore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsireland.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsjoy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsmonstersales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsmusic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsmusic.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsneon.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsnzsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsodre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsofdre-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsonblackfriday2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsone.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsoutlet.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsoutletanytime.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsoutletonlines.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspascher-bydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspascher-fr.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspascher.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspaschers.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspillnewcolor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspills.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspromonsterjp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatspromotions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssaleus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssaustraliabuy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssbyaustralia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssbydredanmark.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsshop-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsshop-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsshopstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssingapores.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatssingaporeshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsstudiohodetelefoner.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsstudiosite.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatstoreusa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatsua.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatswholesale.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatswirelesscheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beatswirelesscuffie.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beddit.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "begin-trade.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bestbeats4u.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bestshoesale2014.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biitii.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "blackfridaydrebeatsnew.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "blackfridaydrebeatsshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bloommicroventures.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bookonsky.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bossae.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braeburncapital.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "brandeasygo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "brandelectronic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "brandproducts1688.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "brands098.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "burstly.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "burstlyrewards.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "businesswebwise.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buy-from-shanghai.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyaapl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyaapl.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyaple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buybeatsbydre-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buybeatsheadphonesbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buycheapbeatsbus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buycheapbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buycheapbeatsbydreshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buycheapbeatsdreuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buydrdrebeatbox.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyminibeatbox.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyonlineheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyshoponly.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buzzardflapper.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bybeatsdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bydrebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "calendarserver.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "camelphat.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "camelspaceeffect.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "canada-beatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "carbon.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "carekit.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casque-fr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsbydrdresolohd.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsdocteurdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsdre2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsenligne.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsfracheter.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsmer.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatsofficiel-fr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatspascher2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquebeatssolo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquedrdrebeatssfr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquemonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquemonsterbeatsbydre2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "casquesbeatsaudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "catalina.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn-apple-mapkit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheap-beats-by-dre.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheap-beatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbagshoes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeats.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeats365.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeats4sale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsaustraliasale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydrdrepro.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydre-au.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydre99.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydrefau.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydremall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydremonster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydrenz.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydreonsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydreoutlet-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydreoutlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydreoutlets2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydresale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydreshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydrestudioedition.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsbydrestudioutlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsdrdresolo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsdrestudios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsheadphone2014.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsheadphones.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsie.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsla.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatssale4u.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapbeatsshopbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapcustombeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapdrdrebeats8.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapdrdrebeatsca.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapdrebeats8.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheaperbeatsbydresale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapestbeatsdrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapheadphonesland.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapheadphonessale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapheadsetmall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapheadsetshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapmonsterbeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapmonsterbeatsheadsets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapmonsterbeatssale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapmonsterbeatsusa.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapmonstersbeatsonsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapnewbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapsalemonster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapshoesvip.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapwireless04.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheapwirelessbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cheerwholesale.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chihair-straightener.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chinaclothesstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chomp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ciattackers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cmhalq.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cnshopin.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "coolmonster.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "coreml.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cozydrdrebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cqcorea.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cuffiesaldi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cups.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "custombeatsbydrebuy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "custombeatsdeals.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "custombeatsforcheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "custombeatsny.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "custombeatssbydreus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "customdrdrebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "customizedbeatbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "customizedbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "customizedbeatsdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cybermondaybeats4sale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "danemarket.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "danmarkbeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dashwood360.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dctbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dealsbeatsblackfriday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "desktopmovie.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "desktopmovie.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "desktopmovie.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "desktopmovies.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "desktopmovies.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "detaliczny.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "developer-advisor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "device-manager.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "digitalhub.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "discountbeatsbydre-us.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "discountbeatsstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "discussionsapple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dispatcher.is.autonavi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dkbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dot-mac.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dotmac.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drbeatsukmart.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdre-beats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeats-chen.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeats-headphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeats-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsbillig.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsdesale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsdiscount.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsforu.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsretail2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatssale7.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrebeatsuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdrefnac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdreheadphonebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdreheadphonekey.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdreheadphonesusstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdremonster-beats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdremonsterdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drdreprobeatssale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-australia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-france.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-monster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-monsteraustralia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-monsterusa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-singapore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-singapore.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-singaporecheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-singaporecheap.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-solo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeats-studio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsaustralia-cheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsaustralia-cheap.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsbuy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsbydreoutlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatscanada.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsdeutschland.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsforsaleus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsheadphones-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatshome.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsoldes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsoutletstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatspill.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatssite.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatssolocybermondaysale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatsstudio2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebeatstudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "drebyby.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dremonsterbeatsoutlets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dreprobeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dreprofy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dtsell.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dvdstudiopro.biz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dvdstudiopro.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dvdstudiopro.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dvdstudiopro.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dvdstudiopro.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dvdstudiopro.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "earphonescheapest.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "earpod.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ebuyheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ecgapp.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ecgapp.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "edu-research.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "emac.co.in"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "emac.in"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "emagic.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "esbeatsbydrebuy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "etheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "eworld.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "faceid99.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "faceid99.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "faceidglobal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "faceshift.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "facetime.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "famosascalvas.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "finalcutpro.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "find-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "findmybeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "firewire.cl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "firewire.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "foundationdb.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fr-beatsbydrestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "francecasquebeatssolde.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "frcasquesbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "free-aa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "free-sns.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "frishoes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gamebeforethegame.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "geoport.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "getdrebeatssale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gmnetworks.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gobeatsye.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gobuyonlinestore.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "goodsdunk.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gsp4-cn.ls.apple.com.edgekey.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonepubs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphones-cool.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphones-dre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphones-outlet-online.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonesbeatsaudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonesbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphoneses.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphoneshome.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphoneshotsales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonesol.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonesretailer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonessupply.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headphonezip.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "headset987.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hellokittybeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "highbolt.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "highdefinitionbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hipaa6020.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hipzoom.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "homepod.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "honawalaan.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hopstop.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotbeatsonsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hottestheadphonesonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hrsaz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibeats-uk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibeatsbydre.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ichat.co.in"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "idvd.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "igoshopping.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ikids.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ilecture.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ilife.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ilife.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ilife.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "illianacomputerrecycling.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imessage.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "incentivetravelgifts.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "insidear.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "insidemacintosh.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ioffergift.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iosinthecar.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipa-iphone.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ischool.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "islamiccenterofnewlondon.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "italiabeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itools.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.com.edgekey.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iwork.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iwork.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iwork.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "jetfuelapp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "jetfuelapps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "jkbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "kickshatchannel.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "kobbeatssbydredk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "kopfhorergunstigshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "latticedata.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "leecountytimes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lexuemei.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "livephotos.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "livephotos.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "livephotos.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lojaiphone.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lovebeatsdr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lovemarca.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ls.apple.com.edgesuite.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "luckyissue.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lyzsxx.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mac-mini.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mac.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mac.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mac.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macappsto.re"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macboxset.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mach-os.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mach-os.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "machos.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macintosh.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macintoshsoftware.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macmini.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macos.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macosforge.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macossierra.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macosx.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macosxlion.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macpazar.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macreach.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macreach.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macruby.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macruby.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macruby.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mairbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "makeeu.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mallheadphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mbeats-tech.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mbheadphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "micstl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mmonsterheadphones.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mobileme.dk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monbeats2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monster-beats-by-dr-dre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monster-beats-headphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats-cheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats-headphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats-onsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats-solo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats-solo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats365buy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeats8beatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsalestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsau.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrdre-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrdre-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrdrecanada.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrdrestudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydre-nz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydre-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydre2015.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydreaustraliacheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrebilligde.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrefactory.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydrenew.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydres.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsbydreshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatscasques.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatscommunity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsdrdrecheap.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsfactory.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsfinland.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsforsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsheadphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsheadphones.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatshere.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsitaly.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsmall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsnegozi.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsok.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsonlinestoreuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsoutlet.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatspascher.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsru.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatssales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatssalg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsshops.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatsstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatssydneyaustralia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatstang.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatstienda.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbeatstudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterbydrebeat.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monstercasquebeatspascher.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monstercheapbeatss.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterdrebeats-canada.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterdrebeats-usa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterdrebeats-usa.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterheadphone.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monsterproduct.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monstersbeatbydres.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monstersdebea.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "monstershopcheapbeats.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "moreheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mr-apple.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ms4dre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mybeatsbydrestudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mybeatsbydreuk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mybeatscheapbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "myferrariheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mzstatic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "namemybeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "neborder.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "negozimonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "negoziomonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newbeatsblackfriday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newbemany.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newdrediscount.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newestbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newlysprung.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newmonst1erbeatsto1re.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newmonsterbeatsheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newschristmasshopping.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "newton.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "next.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflhotsalejerseys.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nicesshop.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "offerairjordanlebron.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officialbeatsbydreshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officialbeatsbydrestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officialdrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officialheadphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ogameblog.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onbeatsbydresale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onlinemonsterbeatsonsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onsalekey.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onsaletrend.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "organicfruitapps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "outletbeatsshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "overapple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pascherbeatsmonster.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paulsimon-music.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "perfectkickz.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "personeelsland.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "picknicekicks.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pickshoesclothes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pillbeatsblackfridaysale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pocketbiketrader.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerbeats2wireless.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerbeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerbook.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "promonsterbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "prostudiobeatscybersale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pullstring.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quatrowireless.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quicktime.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quicktime.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quicktime.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quicktime.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quicktime.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "quicktime.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "qwapi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "rbsgr.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "reform-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "repsneakermall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "repswing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchandcare.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchkit.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchkit.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchkit.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchkit.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchkit.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "researchkit.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "safebrowsing.apple"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "salebeatslasteststyle4you.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "saleblackfridaydrebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "salecheaphandbags.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "samebags.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sanvaras.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "scnshop.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "services-apple.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "servicetalk.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shazam.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shoers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shoestop2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shop-headphones.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopbeatsdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopcustomizedbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopdrebeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopmonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopping-days.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shoppinguheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "siri.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sneaker666.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sneakerpage.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sneakerskick.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "solostudioksale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "soso7778.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "specialtyheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "spektral.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "spiritclubs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "store.apple.com.edgekey.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "straightouttasomewhere.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "studiobeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sulwerphoto.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sunglassessale2014.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "superearsenjoy.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "supplybestjerseys.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sustainthesound.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sverigebeatsbydrdre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swift.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftui.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftui.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "szcheapmonsterheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "szwinnertechnology.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "takegoto.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "texture.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "the-monster-beats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thebeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thebeatsbydre.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thebeatsheadphonesale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "theuab.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thinkdifferent.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "topbeatsbydrdreoutlet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "topbeatsdealer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "topbeatsforsale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "touchid.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "touchid.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tracking-location.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tradevip1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "truedepth3d.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tryrating.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tteshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ubnw.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "unstyle.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "usa-beatsbydreheadphonesonsale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "v-has.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vertexsmb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vip-beats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vipbeatsbydre.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vipheadphones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vipshoes2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wasdj.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webkit.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webkitgtk.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webobjects.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webobjects.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webobjects.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webobjects.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webobjects.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wholesale-exporter1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wholesalediscountpurses.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wholesalefine.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wholesaleonlinemart.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "worldcoinpay.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wpewebkit.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wuxiapple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwapple.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "www-sms-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "www.apple.com.edgekey.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwapple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwapple.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwlapple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--czrs0t4phtr3a.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--fiqs8sxootzz.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--fiqs8sxootzz.xn--hxt814e"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--gtvq61aiijy0b.xn--hxt814e"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--gtvz22d.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--gtvz22d.xn--hxt814e"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--hxtr4rozx.xn--czr694b"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--kput3imi374g.xn--hxt814e"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--ohq11k7pl25iyo8a.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--ruq8a011kt6y.xn--hxt814e"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "yourmonsterbeats.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasdepresentesdeitunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.cl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.co.cr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.co.ni"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.co.ve"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.com.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.com.hn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.com.ni"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.com.ve"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.cr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.gt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.hn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12diasderegalosdeitunes.pe"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "12joursdecadeauxdeitunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aaplimg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "app-store.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appe-store.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-appstore.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-icloud.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-itunes.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-pay.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-pay.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-pay.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleaccount.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleappstore.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleappstore.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleappstore.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appledarwin.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appledarwin.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleicloud.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid-applemx.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid-applemx.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid-iclou.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid-uk.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid.berlin"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid.hamburg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleid.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemx-icloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.audio"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.blog"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.chat"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.cloud"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.club"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.community"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.film"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.guide"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.host"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.space"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.tech"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleone.website"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.berlin"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.co.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.hamburg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepay.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaycash.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaycash.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaycash.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaycash.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaymerchantsupplies.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.berlin"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applepaysupplies.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewallet.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewallet.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appsto.re"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appstore.co.id"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appstore.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appstore.my"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appstore.ph"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appstoreapple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "asto.re"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "crashlytics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "darwinsource.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "darwinsource.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "darwinsourcecode.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-apple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-content.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-isupport.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-sandbox.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ee"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.fi"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ie"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.is"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.lv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.om"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ro"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.si"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.sk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.vn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudads.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudapple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudbox.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudbrowser.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloude.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudhome.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudmail.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudmusic.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudnet.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudo.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudos.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudos.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudpay.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudsecure.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudsetup.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ids-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ios-icloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itun.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunbes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ituneas.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes-apple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes-radio.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.co.th"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.mx"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.rio"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunes12days.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesapple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesessentials.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesfestivals.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesiradio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ituneslatino.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ituneslogin.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesmatch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesparty.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesradio.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesradio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesradio.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesradio.rio"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesradio.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesradio.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesstore.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesu.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "itunesu.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iutunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "me.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "myappleid.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "myicloud.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mylcloud.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tvappstore.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwicloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwitunes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aplestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aplleipods.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-imac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-store.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-store.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-store.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-watch.com.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecare.berlin"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecare.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecare.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecare.hamburg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applecare.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleclassicipod.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleimac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleiphone.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleiphone.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleiphonecell.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.bg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.cm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.co.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.co.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.co.ug"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.bn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.ee"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.eg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.hr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.jo"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.my"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.ph"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.ro"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.sn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.me"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.net.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.ph"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.qa"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.sg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestore.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestoreonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applestorepro.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatch.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatch.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatch.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatch.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatchedition.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatchseries3.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applewatchsport.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bestiphonestuff.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cooliphonecasesstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "custom-iphonecase.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "designeriphonescases.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dl-iphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "downloadsforipod.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ebookforipad.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "euroipad.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "findmyipad.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fundaiphone5s.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hebiphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hf-iphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac-applecomputer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.one"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imac.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imacapple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imacapplecomputer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imacsources.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "indiaipad.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipad.co.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipad.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipad.host"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipad.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipad3.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.cl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.cm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.com.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.ie"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadair.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadaustralia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadmini.cm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadmini.com.lk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadmini.lk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipadpro.buzz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphine.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-8.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-cd.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-cn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-sh.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-vip1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-vip2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-vip3.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-vip4.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-vip5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-x.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-yh.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone-zh.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.cm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.com.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.host"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.net.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone4.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone4.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone4s.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone5casescovers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphone5s5case.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoneacessorios.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonecase2013.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonecase5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonecases100.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonecases5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoneclaro.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonecollcase.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonefc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonegermany.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonehangzhou.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoneimessage.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoneplus.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonerip.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonese.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoneunlockimei.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphonexs.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.cm"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.co.za"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com.sg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.is"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.no"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.pk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipod.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodcentre.nl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodcleaner.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipoditouch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodnano.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodnano.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodprices.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodrip.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodrocks.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipods.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodshop.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodtouch.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipodtouch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "launchpad.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mac.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbook.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbook.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbook.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbook.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.co.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.com.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookair.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookpro.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookpro.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookpro.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookpro.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookpro.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbookpros.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "macbooksale.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "myipod.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "offrezdesipods.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onlineapplestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onlyiphone5case.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "simplyipod.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ukipad.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwipodlounge.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwmacbookair.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.comscoreresearch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.news"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appleenews.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusic.berlin"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusic.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusic.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusic.hamburg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusic.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusicconnect.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusicfestival.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applenews.berlin"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applenews.hamburg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applenews.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applenewsformat.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletv.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletv.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletv.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletv4.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletv4.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appletvapp.apple"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "i-book.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "i-book.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibook.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibook.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibook.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibook.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibookpartner.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibooksauthor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imovie.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imoviegallery.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imoviestage.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoto.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoto.no"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoto.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iphoto.wang"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "musickit.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwapplemusic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemusic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-dns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "digicert.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-cloudkit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-livephotoskit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apzones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-content.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.cn"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "apple-support.akadns.net"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "apple.com.akadns.net"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "apple.com.edgekey.net"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "buy.itunes.apple.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "smp-device"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "testflight"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "icloud.com.akadns.net"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "139.178.128.0/18"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "144.178.0.0/19"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "144.178.36.0/22"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "144.178.48.0/20"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "17.0.0.0/8"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "192.35.50.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "198.183.17.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "205.180.175.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "63.92.224.0/19"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "65.199.22.0/23"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "2403:300::/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "2620:149::/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "2a01:b740::/32"
+      ]
+    },
+    {
+      "process_name": [
+        "CoreLocationAgent"
+      ]
+    },
+    {
+      "process_name": [
+        "WeatherWidget"
+      ]
+    },
+    {
+      "process_name": [
+        "apsd"
+      ]
+    },
+    {
+      "process_name": [
+        "com.apple.Maps"
+      ]
+    },
+    {
+      "process_name": [
+        "findmydevice-user-agent"
+      ]
+    },
+    {
+      "process_name": [
+        "fmfd"
+      ]
+    },
+    {
+      "process_name": [
+        "mapspushd"
+      ]
+    },
+    {
+      "process_name": [
+        "netbiosd"
+      ]
+    },
+    {
+      "process_name": [
+        "trustd"
+      ]
+    },
+    {
+      "process_name": [
+        "com.apple.geod"
+      ]
+    },
+    {
+      "process_name": [
+        "Music"
+      ]
+    },
+    {
+      "process_name": [
+        "LookupViewService"
+      ]
+    },
+    {
+      "process_name": [
+        "TV"
+      ]
+    }
+  ]
+}

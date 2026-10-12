@@ -1,0 +1,6 @@
+# NAME: Brokerage Market Data
+# UPDATED: 2026-08-12
+# Shared providers are isolated so they can use a different policy.
+DOMAIN-SUFFIX,morningstar.com
+DOMAIN-SUFFIX,recognia.com
+DOMAIN-SUFFIX,refinitiv.com

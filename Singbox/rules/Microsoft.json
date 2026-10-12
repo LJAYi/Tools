@@ -1,0 +1,3355 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "vsmarketplacebadge.apphb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "1drv.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "21vbc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "21vbluecloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "21vbluecloud.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "a-msedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "a1158.g.akamai.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "a122.dscg3.akamai.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "a767.dscg3.akamai.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aadrm.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aadrm.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "acompli.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "acompli.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "adaptivecards.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aggresmart.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aicscience.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aka.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "akadns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ankarazirvesi2018.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "api-extractor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apihub-internal.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apisof.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appcenter.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applicationinsights.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applicationinsights.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appserviceenvironment.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aria.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "asp.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aspnetcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "assets-yammer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azcrmc-test.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azcrmc.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azk8s.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aznbcontent.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "aztask.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-api.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-apihub.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-apim.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-automation.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-connectedvehicles-stage.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-connectedvehicles.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-devices-int.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-devices-provisioning.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-devices.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-devices.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-dns.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-dns.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-dns.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-dns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-dns.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-mobile.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-sphere.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure-test.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azure.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecomcdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecomm.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecontainer.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecosmos.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecosmosdb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecosmosdb.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecosmosdb.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecr-test.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurecr.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredatabricks.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredevopslaunch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredigitaltwin.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredigitaltwins.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredigitaltwins.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredns-prd.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuredns-prd.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureedge-test.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurefd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurefd.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurehdinsight.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureiotcentral.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureiotsolutions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureiotsuite.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureiotsuite.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuremresolver.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureplanetscale.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureplanetscale.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureprivatedns.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurerms.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurerms.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuresandbox.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azureserviceprofiler.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azuresmartspaces.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurestackvalidation.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "azurewebsites.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "b.akamaiedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "b2clogin.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "b3itech.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bbing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beth.games"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bethesda.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bethesdagamestudios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bethsoft.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bibg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "binads.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "binb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "binf.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing123.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing135.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bing4.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingads.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingagencyawards.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingapis.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingapistatistics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "binginternal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingit.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingiton.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingj.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingpix.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingpk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bings.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingsandbox.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingtoolbar.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingtranslator.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingvisualsearch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bingworld.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biying.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biying.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biying.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "blazor.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "blueaggrestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bluecloudprod.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bluehatil.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bluehatnights.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "boswp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "botframework.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "brazilpartneruniversity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "breakdown.me"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "c-msedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "callersbane.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cegid-cloud.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "centralvalidation.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ch9.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "charticulator.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chinacloud-mobile.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chinacloudapi.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chinacloudapp.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "chinacloudsites.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cloudapp.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cloudappsecurity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "codethemicrobit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cortana.ai"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cortanaanalytics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cortanaskills.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cosmosdb.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cosmosdb.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "crmdynint-gcc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "crmdynint.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "crossborderexpansion.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cs11.wpc.v0cdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cs9.wac.phicdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "devopsassessment.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "devopsms.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dictate.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "discoverbing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "docs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "doom.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dot.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dwh5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dynamics.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dynamics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "e-msedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "edgesuite.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "efproject.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "elderscrolls.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "engkoo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "evoke-windowsservices-tas.msedge"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "exp-tas.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "explorebing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fabric.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fasttrackreadysupport.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "femalefounderscomp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "flipwithsurface.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fluidpreview.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "footprintdns.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "forzamotorsport.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "forzaracingchampionship.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "forzarc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "g.akamaiedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gamepass.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gamesstack.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gameuxmasterguide.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gears5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gearspop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gearstactics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "getmicrosoftkey.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gfx.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gigjam.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gotcosmos.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "graphengine.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "groupme.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hdinsightservices.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "helpshift.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "here.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "here.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "heremaps.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hockeyapp.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hololens.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmail"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmail.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmail.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmail.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmail.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotmail.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hummingbird.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ie10.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ie11.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ie8.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ie9.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "imaginecup.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "img-prod-cms-rt-microsoft-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "img-s-msn-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ingads.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "insiderdevtour.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "internetexplorer.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "internetexplorer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "intunewiki.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "iotinactionevents.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "joinms.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "joinms.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "joinmva.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "jwt.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "kidgrid.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "kumo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "latampartneruniversity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "live.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "live.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "live.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "live.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "live.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "livetileedge.dsx.mp.microsoft.com.edgekey.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "livingyourambition.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "localytics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lync.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "lync.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "m12.vc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "makecode.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "managedmeetingrooms.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "management-azure-devices-int.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "management-azure-devices-provisioning.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "management-azure-devices.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "management-azure-devices.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mapblast.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mappoint.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "masalladeloslimites.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mcchcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "meetfasttrack.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "meetyourdevices.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mepn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mesh.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mgmt-azure-api.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microbit.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-falcon.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-give.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-int.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-online.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-online.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-ppe.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-sap-events.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-sbs-domains.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-smb.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft-tst.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.az"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.be"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.by"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.cat"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.cl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.com.nsatc.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.cz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.dk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ee"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.fi"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ge"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.is"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.it"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.lt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.lu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.lv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.md"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.red"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ro"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.rs"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.si"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.ua"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.uz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft.vn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoft365.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftaccountguard.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftadc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftads.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftadvertising.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftadvertisingregionalawards.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftaffiliates.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftapp.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftazuread-sso.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftazuresponsorships.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftazurestatus.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftcloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftcloudsummit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftcloudworkshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftcommunitytraining.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftdiplomados.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsofteca.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftedge.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftedgeinsider.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftemail.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftestore.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftgamestack.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsofthouse.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsofthouse.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftinternetsafety.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftiotcentral.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftiotinsiderlabs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftlatamaitour.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftlatamholiday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftlinc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftmetrics.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftmxfilantropia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnews.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnews.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnews.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnews.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnews.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnewsforkids.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnewsforkids.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnewsforkids.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnewskids.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnewskids.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftnewskids.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftol.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftol.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-i.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-m-i.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-m.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-p-i.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-p-i.net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-p.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-p.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-p.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline-p.net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftpartnercommunity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftpartnersolutions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftreactor.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftreactor.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftreactor.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftreactor.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftreactor.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftready.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftsilverlight.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftsilverlight.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftsilverlight.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftsiteselection.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftsqlserver.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftstart.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftstore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftstore.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftstore.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftstream.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftteams.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsofttradein.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsofttranslator-int.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsofttranslator.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftusercontent.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftuwp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "minecraft.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "minecraftshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mmais.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mmdnn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mncmsidlab1.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mojang.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "momentumms.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mono-project.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "morphcharts.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mpnevolution.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ms-studiosmedia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ms365surfaceoffer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msa.akadns6.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msads.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msappproxy.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msappproxy.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msauth.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msauth.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msauthimages.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msauthimages.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mschallenge2018.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mschcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msecnd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msft.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msft.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftauth.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftauth.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftauthimages.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftauthimages.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftcenterone.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftcloudes.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftconnecttest.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msfteducation.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftidentity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msftnet.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msgamesresearch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msgamestudios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msidentity.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msidentity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msidlabpbmc.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msignitechina.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msinnovationchallenge.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msminico.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msminico.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msn.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msn.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msn.com.nsatc.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msn.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msnewskids.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msnewskids.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msnewskids.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msnkids.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msnmaps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msocdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msocsp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msopentech.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mspairlift.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mspil.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msra.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msropendata.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mstea.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msturing.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msudalosti.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msunlimitedcloudsummit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msvevent.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msxiaobing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msxiaoice.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "msxiaona.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mwf-service.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "myhomemsn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mymicrosoft.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nextechafrica.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nuget.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nugettest.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nxta.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "o365cn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "o365files.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "o365weve-dev.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "o365weve-ppe.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "o365weve.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "oaspapps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office365-net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office365.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office365.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office365love.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "office365tw.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officecdn-microsoft-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officedev.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officeplus.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officeppe.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "officewebapps.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "omniroot.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onecollector.cloudapp.aria"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onedrive.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onedrive.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onedrive.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onedrive.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onedrive.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onenote.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onenote.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onestore.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onmicrosoft.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onmschina.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "opentranslatorstothings.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "opticsforthecloud.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "optimizely.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "orithegame.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "osdinfra.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "outingsapp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "outlook.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "outlook.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "outlookgroups.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "outlookmobile.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ovi.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "passport.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pbiwebcontent.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "phonefactor.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pixapp.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "playfabapi.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "playfabcn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "poshtestgallery.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerapps.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerappscdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerappsportals.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerautomate.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerautomate.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerbi.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powerbi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "powershellgallery.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "prod-video-cms-rt-microsoft-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "projectmurphy.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "projectsangam.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "public-trust.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pwabuilder.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pxt.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "reactorms.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "renlifang.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "renovacionoffice.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "renovacionxboxlive.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "s-microsoft.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "s-msedge.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "s-msft.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "s-msn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sankie.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sclive.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "serverlesslibrary.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sfbassets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sfbassets.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sfx.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sharepoint.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "signalr.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "skype"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "skype.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "skype.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "skypeassets.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "skypeassets.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "skypeforbusiness.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sprinklesapp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sqlserveronlinux.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "staffhub.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "start.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "statics-marketingsites-eas-ms-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "statics-marketingsites-eus-ms-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "statics-marketingsites-neu-ms-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "statics-marketingsites-wcus-ms-com.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "successwithteams.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "surface.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "svc.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sway-cdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sway-extensions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sway.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "syncshop.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sysinternals.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tailwindtraders.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "techhub.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tellmewhygame.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tenor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tfsallin.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "timelinestoryteller.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "trafficmanager.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "trafficmanager.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "translatetheweb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "trustcenter.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tryfunctions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "unity3dcloud.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "unlocklimitlesslearning.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "userpxt.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "uservoice.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "uwpcommunitytoolkit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vfsforgit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vfsforgit.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "videobreakdown.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "videoindexer.ai"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vip5.afdorigin-prod-am02.afdogw.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "virtualearth.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "visualstudio-staging.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "visualstudio.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "visualstudio.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "visualstudio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "visualstudio.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "visualstudio.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vsallin.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vsassets.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vscode-cdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vscode-unpkg.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vscode-webview.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "vscode.dev"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wbd.ms"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "what-fan.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows-int.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows-ppe.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows.nl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windows8.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsazure.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsazure.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsazurestatus.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowscommunity.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowslive.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsmarketplace.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsphone-int.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsphone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowssearch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "windowsupdate.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "winhec.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "winhec.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "winmp.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wlxrs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "working-bing-int.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wunderlist.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xamarin.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox360.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox360.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox360.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbox360.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxab.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxgamepass.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxgamestudios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxlive.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxlive.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxone.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxone.eu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxplayanywhere.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxservices.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xboxstudios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xbx.lv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "yammer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "yammerusercontent.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "1drv.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "livefilestore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "microsoftpersonalcontent.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onedrive.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sharepoint.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sharepointonline.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "spoprod-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "microsoft"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "1drv"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "onedrive"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "skydrive"
+      ]
+    },
+    {
+      "process_name": [
+        "OneDrive"
+      ]
+    },
+    {
+      "process_name": [
+        "OneDriveUpdater"
+      ]
+    }
+  ]
+}

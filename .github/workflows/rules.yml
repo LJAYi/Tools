@@ -1,0 +1,24 @@
+name: Validate rules
+
+on:
+  push:
+    paths:
+      - "Rule/**"
+      - "scripts/**"
+      - ".github/workflows/rules.yml"
+  pull_request:
+    paths:
+      - "Rule/**"
+      - "scripts/**"
+      - ".github/workflows/rules.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  us-finance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate US finance rules
+        run: scripts/check-us-finance.sh

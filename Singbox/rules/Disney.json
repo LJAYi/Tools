@@ -1,0 +1,875 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "20thcenturystudios.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "20thcenturystudios.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "20thcenturystudios.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abc-studios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abcnews.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abcnews.edgesuite.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "adobedtm.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "adventuresbydisney.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "babble.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "babyzone.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bam.nr-data.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bamgrid.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beautyandthebeastmusical.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braze.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn.optimizely.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "conviva.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "d9.flashtalking.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dilcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney-asia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney-discount.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney-plus.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney-portal.my.onetrust.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney-studio.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney-studio.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.asia"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.be"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.bg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.co.il"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.co.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.co.kr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.co.th"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.co.za"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.com.br"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.cz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.demdex.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.dk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.fi"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.id"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.in"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.it"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.my"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.my.sentry.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.nl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.no"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.ph"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.ro"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disney.sg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyadsales.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyarena.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyaulani.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneybaby.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneycareers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneychannelonstage.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneychannelroadtrip.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneycruisebrasil.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyenconcert.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyiejobs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyinflight.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyinternational.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyinternationalhd.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyjunior.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyjuniortreataday.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneylandparis.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneylatino.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.co.il"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.co.za"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.es"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.gen.tr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.gr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.it"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmoments.pl"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymagicmomentsme.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyme.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymeetingsandevents.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymovieinsiders.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneymusicpromotion.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneynewseries.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneynow.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneypeoplesurveys.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyplus.bn5x.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyplus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyplus.com.ssl.sc.omtrdc.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyprivacycenter.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyredirects.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneysrivieraresort.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneystore.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneystreaming.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneysubscription.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneytermsofuse.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneytickets.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyturkiye.com.tr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneytvajobs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "disneyworld-go.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dlp-media.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dmed.technology"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dssedge.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dssott.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dtci.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dtci.technology"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "edgedatg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espn.co.uk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espn.hb.omtrdc.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espncdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espndotcom.tt.omtrdc.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "espnqa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "execute-api.us-east-1.amazonaws.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "go-disneyworldgo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "go.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotstar-cdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotstar-labs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotstar.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hotstarext.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hsprepack.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "js-agent.newrelic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvel.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvel10thanniversary.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marveldimensionofheroes.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvelparty.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvelpinball.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvelsdoubleagent.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvelspotlightplays.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvelsuperheroseptember.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marvelsuperwar.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mickey.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "moviesanywhere.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "natgeomaps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nationalgeographic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nationalgeographicpartners.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ngeo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nomadlandmovie.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "playmation.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shopdisney.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "shops-disney.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sorcerersarena.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "spaindisney.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "star-brasil.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "star-latam.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "starott.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "starplus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "starwars.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "starwarsgalacticstarcruiser.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "starwarskids.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "streamingdisney.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "themarvelexperiencetour.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thestationbymaker.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thewaltdisneycompany.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thisispolaris.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "watchdisneyfe.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "watchespn.com"
+      ]
+    },
+    {
+      "process_name": [
+        "com.disney.datg.videoplatforms.android.abc"
+      ]
+    },
+    {
+      "process_name": [
+        "com.disney.disneyplus"
+      ]
+    }
+  ]
+}

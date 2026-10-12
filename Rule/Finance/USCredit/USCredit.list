@@ -1,0 +1,13 @@
+# GENERATED: scripts/build-us-finance.sh
+
+DOMAIN-SUFFIX,annualcreditreport.com
+DOMAIN-SUFFIX,creditkarma.com
+DOMAIN-SUFFIX,fico.com
+DOMAIN-SUFFIX,innovis.com
+DOMAIN-SUFFIX,myfico.com
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,myequifax.com
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,experiancs.com
+DOMAIN-SUFFIX,transunion.com
+DOMAIN-SUFFIX,transunioncs.com

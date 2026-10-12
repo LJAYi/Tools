@@ -1,0 +1,85 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    { "type": "direct", "tag": "DIRECT" },
+    { "type": "block", "tag": "REJECT" },
+    { "type": "selector", "tag": "Final", "outbounds": ["DIRECT"], "default": "DIRECT" },
+    { "type": "selector", "tag": "Apple", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "BiliBili", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Netflix", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Disney", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "YouTube", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "TikTok", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "GlobalMedia", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "OpenAI", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Claude", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Gemini", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Google", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Microsoft", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "PayPal", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Telegram", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Steam", "outbounds": ["Final", "DIRECT"], "default": "Final" },
+    { "type": "selector", "tag": "Lan", "outbounds": ["DIRECT"], "default": "DIRECT" },
+    { "type": "selector", "tag": "China", "outbounds": ["DIRECT", "Final"], "default": "DIRECT" }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rule_set": [
+      { "type": "remote", "tag": "WeChat", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/WeChat.json" },
+      { "type": "remote", "tag": "Apple", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Apple.json" },
+      { "type": "remote", "tag": "BiliBili", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/BiliBili.json" },
+      { "type": "remote", "tag": "Netflix", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Netflix.json" },
+      { "type": "remote", "tag": "Disney", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Disney.json" },
+      { "type": "remote", "tag": "YouTube", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/YouTube.json" },
+      { "type": "remote", "tag": "TikTok", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/TikTok.json" },
+      { "type": "remote", "tag": "GlobalMedia", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/GlobalMedia.json" },
+      { "type": "remote", "tag": "OpenAI", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/OpenAI.json" },
+      { "type": "remote", "tag": "Claude", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Claude.json" },
+      { "type": "remote", "tag": "Gemini", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Gemini.json" },
+      { "type": "remote", "tag": "Google", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Google.json" },
+      { "type": "remote", "tag": "Microsoft", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Microsoft.json" },
+      { "type": "remote", "tag": "PayPal", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/PayPal.json" },
+      { "type": "remote", "tag": "Telegram", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Telegram.json" },
+      { "type": "remote", "tag": "Steam", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Steam.json" },
+      { "type": "remote", "tag": "Lan", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/Lan.json" },
+      { "type": "remote", "tag": "ChinaMax", "format": "source", "url": "https://raw.githubusercontent.com/LJAYi/Tools/main/Singbox/rules/ChinaMax.json" }
+    ],
+    "rules": [
+      { "rule_set": ["WeChat"], "outbound": "DIRECT" },
+      { "rule_set": ["Apple"], "outbound": "Apple" },
+      { "rule_set": ["BiliBili"], "outbound": "BiliBili" },
+      { "rule_set": ["Netflix"], "outbound": "Netflix" },
+      { "rule_set": ["Disney"], "outbound": "Disney" },
+      { "rule_set": ["YouTube"], "outbound": "YouTube" },
+      { "rule_set": ["TikTok"], "outbound": "TikTok" },
+      { "rule_set": ["GlobalMedia"], "outbound": "GlobalMedia" },
+      { "rule_set": ["OpenAI"], "outbound": "OpenAI" },
+      { "rule_set": ["Claude"], "outbound": "Claude" },
+      { "rule_set": ["Gemini"], "outbound": "Gemini" },
+      { "rule_set": ["Google"], "outbound": "Google" },
+      { "rule_set": ["Microsoft"], "outbound": "Microsoft" },
+      { "rule_set": ["PayPal"], "outbound": "PayPal" },
+      { "rule_set": ["Telegram"], "outbound": "Telegram" },
+      { "rule_set": ["Steam"], "outbound": "Steam" },
+      { "rule_set": ["Lan"], "outbound": "Lan" },
+      { "rule_set": ["ChinaMax"], "outbound": "China" }
+    ],
+    "final": "Final"
+  }
+}

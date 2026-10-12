@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "e13252.dscg.akamaiedge.net"
+      ]
+    },
+    {
+      "domain": [
+        "h-netflix.online-metrix.net"
+      ]
+    },
+    {
+      "domain": [
+        "netflix.com.edgesuite.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cookielaw.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fast.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "flxvpn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflix.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflix.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflix.com.au"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflix.com.edgesuite.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflix.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest0.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest10.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest3.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest4.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest6.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest7.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest8.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixdnstest9.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixinvestor.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixstudios.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "netflixtechblog.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflxext.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflximg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflximg.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflxsearch.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflxso.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "nflxvideo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "onetrust.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "us-west-2.amazonaws.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "apiproxy-device-prod-nlb-"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "dualstack.apiproxy-"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "dualstack.ichnaea-web-"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "netflixdnstest"
+      ]
+    },
+    {
+      "process_name": [
+        "com.netflix.mediaclient"
+      ]
+    }
+  ]
+}

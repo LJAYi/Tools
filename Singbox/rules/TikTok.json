@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "lf16-effectcdn.byteeffecttos-g.com"
+      ]
+    },
+    {
+      "domain": [
+        "lf16-pkgcdn.pitaya-clientai.com"
+      ]
+    },
+    {
+      "domain": [
+        "p16-tiktokcdn-com.akamaized.net"
+      ]
+    },
+    {
+      "domain": [
+        "trae-api-sg.mchost.guru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bytedapm.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bytegecko-i18n.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "byteintlapi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "byteoversea.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "capcut.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibytedtos.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ibyteimg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ipstatp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "isnssdk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "marscode.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "muscdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "musical.ly"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sgpstatp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "snssdk.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tik-tokapi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktok.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokcdn-us.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokd.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokmusic.app"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokv.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "tiktokv.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "trae.ai"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ttwebview.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "musical.ly"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "tiktok"
+      ]
+    },
+    {
+      "process_name": [
+        "com.zhiliaoapp.musically"
+      ]
+    }
+  ]
+}

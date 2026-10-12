@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "cdn-ali.content.steamchina.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn-qc.content.steamchina.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn-ws.content.steamchina.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "csgo.wmsj.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dl.steam.clngaa.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dl.steam.ksyna.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dota2.wmsj.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "edge.steam-dns.top.comcast.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "f3b7q2p3.ssl.hwcdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fanatical.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "humblebundle.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "playartifact.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "s.team"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "st.dl.bscstorage.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "st.dl.eccdnx.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "st.dl.pinyuncloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam-api.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam-chat.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.apac.qtlglb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.cdn.on.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.cdn.orcon.net.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.cdn.slingshot.co.nz"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.cdn.webra.ru"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.eca.qtlglb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.naeu.qtlglb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.ru.qtlglb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steam.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steambroadcast.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamcdn-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamcommunity-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamcommunity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamcontent.tnkjmec.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamdeck.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamgames.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steammobile.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steampipe-kr.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steampipe-partner.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steampipe.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steampowered.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steampowered.com.8686c.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamstat.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamstatic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamstatic.com.8686c.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamstore-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamunlocked.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamusercontent-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamuserimages-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "steamvideo-a.akamaihd.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "underlords.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "valvesoftware.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wmsjsteam.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "steambroadcast"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "steamstore"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "steamuserimages"
+      ]
+    }
+  ]
+}

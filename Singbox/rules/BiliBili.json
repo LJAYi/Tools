@@ -1,0 +1,650 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjsgrzdrctt.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjsgrzdrctu.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjz8yzdnc31.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjz8yzdnc3t.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjzgazdrpba.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjzgazdrpbz.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr4uqmtt8y41hcjzgazdrpjt.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "0gr5dgmttgha1hcj38yzdncb3.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "112-81-125-43.dhost.00cdn.com"
+      ]
+    },
+    {
+      "domain": [
+        "113-219-145-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "114-236-92-129.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "180-101-74-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "1geadrmttge3nhcjwgazdope.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1geadrmttge3nhcjwgwzdqqe.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr3uomttgr31hcjo8yzdnco.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr3uomttgr31hcjo8yzdnpy.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr3uomttgr31hcjtgezdkcy.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr4uqmtt8y41hcjigazdqca.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr4uqmtt8y41hcjigazdqce.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr4uqmtt8y41hcjigazdqco.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr4uqmtt8y41hcjigazdqpo.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr4uqmtt8y41hcjzgwzdkqe.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdcca.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdcco.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdkca.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdkco.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdkpe.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdkpy.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj38yzdkqy.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj3gczdcpa.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj3gczdcpe.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj3gczdcpo.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcj3gczdcqy.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1gr5dgmttgha1hcttgrzdnpo.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "1graukmttga4nhcjtgozdgce.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "218-91-225-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "219-155-150-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "222-188-6-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "36-104-134-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "36-25-252-1.ksyungslb.com"
+      ]
+    },
+    {
+      "domain": [
+        "3ge3drmttga5nhcbqge3ur.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "3geauymtsgrzdnqbofa5do.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "3geauymtsgrzdnqbofa5dy.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "3geauymtsgrzdrcbzfahue.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "3geauymtsgrzdrcbzfahuk.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "4go41hcjtgazdoctqge4o.ourdvsss.com"
+      ]
+    },
+    {
+      "domain": [
+        "p-bstarstatic.akamaized.net"
+      ]
+    },
+    {
+      "domain": [
+        "p.bstarstatic.com"
+      ]
+    },
+    {
+      "domain": [
+        "upos-bstar-mirrorakam.akamaized.net"
+      ]
+    },
+    {
+      "domain": [
+        "upos-bstar1-mirrorakam.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "acg.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "acgvideo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "animetamashi.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "animetamashi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "anitama.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "anitama.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "b23.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "baka.im"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bigfun.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bigfunapp.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bili22.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bili2233.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bili23.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bili33.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biliapi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biliapi.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibili.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibili.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibili.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibili.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibili.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibili.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibiligame.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibiligame.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibiligame.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibilipay.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilibilipay.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilicdn1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilicdn2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilicdn3.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilicdn4.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilicdn5.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilicomics.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biligame.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biligame.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biligame.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biligame.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biligo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biliimg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biliintl.co"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biliintl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "biliplus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilivideo.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilivideo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bilivideo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "corari.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dreamcast.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "dyhgames.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hdslb.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hdslb.com.w.kunlunhuf.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hdslb.com.w.kunlunpi.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hdslb.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "hdslb.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "im9.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "maoercdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mcbbs.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mincdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sharejoytech.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "smtcdns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "upos-hz-mirrorakam.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "uposdash-302-bilivideo.yfcdn.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "yo9.com"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "106.75.74.76/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "111.206.25.147/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "119.3.238.64/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "120.92.108.182/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "120.92.113.99/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "120.92.153.217/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "134.175.207.130/32"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "203.107.1.0/24"
+      ]
+    },
+    {
+      "process_name": [
+        "com.bilibili.app.blue"
+      ]
+    },
+    {
+      "process_name": [
+        "com.bilibili.app.in"
+      ]
+    },
+    {
+      "process_name": [
+        "com.bilibili.comic"
+      ]
+    },
+    {
+      "process_name": [
+        "com.bilibili.comic.intl"
+      ]
+    },
+    {
+      "process_name": [
+        "tv.danmaku.bili"
+      ]
+    },
+    {
+      "process_name": [
+        "tv.danmaku.bilibilihd"
+      ]
+    }
+  ]
+}

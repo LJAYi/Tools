@@ -1,0 +1,1240 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "account-paypal.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "account-paypal.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "account-paypal.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "accountpaypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "accountpaypal.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "accountpaypal.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "anfutong.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "anfutong.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "anfutong.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beibao.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beibao.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beibao.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bill-safe.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "billmelater.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "billmelater.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "billmelater.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bml.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreegateway.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreegateway.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreepayments.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreepayments.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreepayments.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreepayments.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreepaymentsolutions.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreeps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "briantreepayments.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "briantreepayments.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "buyfast-paysmart.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "card.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cash2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cashify.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cashify.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "devtools-paypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "experiencebillmelater.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "filipino-music.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "fundpaypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "getbraintree.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "gmoney.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "i-o-u.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "krakenjs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "loanbuilder.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "login-paypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "login-paypal.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mywaytopay.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mywaytopay.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pa9pal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paaypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paily.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paily.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paipal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pavpal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paydiant.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paylike.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypa1.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypa1.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypaal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-activate.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-activate.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-activate.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-apac.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-apps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-biz.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-brandcentral.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-business.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-business.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-business.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-cardcash.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-cash.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-center.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-center.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-center.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-center.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-communication.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-communications.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-communications.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-community.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-community.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-comunidad.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-corp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-database.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-database.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-donations.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-dynamic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-engineering.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-europe.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-excelinvoicing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-exchanges.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-forward.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-galactic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-gift.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-gifts.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-gpplus.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-here.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-hrsystem.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-innovationlab.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-integration.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-japan.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-knowledge.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-labs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-latam.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-learning.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-login.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-login.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-login.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-login.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-luxury.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-mainstreet.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-marketing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-media.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-merchantloyalty.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-mktg.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-mobilemoney.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-network.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-notice.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-notify.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-online.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-online.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-online.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-optimizer.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-pages.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-photocard.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-plaza.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-portal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-prepagata.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-prepagata.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-prepaid.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-profile.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-proserv.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-qrshopping.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-recargacelular.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-redeem.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-referral.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-retail.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-scoop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-search.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-secure.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-secure.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-security.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-security.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-service.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-signin.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-signin.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-special.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-specialoffers.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-sptam.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-status.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-support.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-survey.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-survey.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-team.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal-viewpoints.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.ca"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.com.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.com.sg"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.me"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.org.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.so"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypal.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalbeacon.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalbenefits.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalbrasil.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcommunity.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcommunity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcommunity.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcommunity.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcorp.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcredit.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalcreditcard.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalgivingfund.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalhere.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypali.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalinc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalindia.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalinsuranceservices.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypall.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypallabs.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalme.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalnet.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalnet.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalnetwork.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalnetwork.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalnetwork.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalobjects.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalonline.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalonline.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalprepagata.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalprepagata.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalservice.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalshopping.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalshopping.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalsurvey.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypalx.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "paypaly.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "payppal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "payypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pdncommunity.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pp-soc.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ppaypal.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pppds.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pypl.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pypl.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pypl.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "pypl.tv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "s-xoom.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "secure-paypal.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "securepaypal.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "simility.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "sslpaypal.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftbank.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftbank.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftcapital.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftfinancial.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftfinancial.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "swiftfinancial.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "thepaypalshop.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "theshoppingexpresslane.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "venmo-touch.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "venmo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "venmo.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "venmo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "venmo.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "venmo.s3.amazonaws.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "webmoneyinfo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wiremoneytoirelandwithxoomeasierandcheaper.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "www-paypal.info"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "www-paypal.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwxoom.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xn--bnq297cix3a.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xoom-experience.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xoom.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xoom.io"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xoom.net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xoom.us"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "xoomcom.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "paypal"
+      ]
+    }
+  ]
+}
