@@ -7323,6 +7323,11 @@
     },
     {
       "domain_suffix": [
+        "apple.news"
+      ]
+    },
+    {
+      "domain_suffix": [
         "appleenews.com"
       ]
     },
@@ -7334,11 +7339,6 @@
     {
       "domain_suffix": [
         "applemusic.co"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "applemusic.com"
       ]
     },
     {
@@ -7503,22 +7503,17 @@
     },
     {
       "domain_suffix": [
+        "applemusic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "apple-dns.net"
       ]
     },
     {
       "domain_suffix": [
-        "apple.news"
-      ]
-    },
-    {
-      "domain_suffix": [
         "appsto.re"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "cdn-apple.com"
       ]
     },
     {
@@ -7554,6 +7549,11 @@
     {
       "domain_suffix": [
         "apzones.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn-apple.com"
       ]
     },
     {
