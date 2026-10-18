@@ -5948,6 +5948,11 @@
     },
     {
       "domain_suffix": [
+        "appsto.re"
+      ]
+    },
+    {
+      "domain_suffix": [
         "appstore.co.id"
       ]
     },
@@ -7343,6 +7348,11 @@
     },
     {
       "domain_suffix": [
+        "applemusic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "applemusic.com.au"
       ]
     },
@@ -7503,17 +7513,7 @@
     },
     {
       "domain_suffix": [
-        "applemusic.com"
-      ]
-    },
-    {
-      "domain_suffix": [
         "apple-dns.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "appsto.re"
       ]
     },
     {
