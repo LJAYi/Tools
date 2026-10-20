@@ -5683,6 +5683,11 @@
     },
     {
       "domain_suffix": [
+        "apple-icloud.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
         "apple-itunes.cn"
       ]
     },
@@ -5733,6 +5738,11 @@
     },
     {
       "domain_suffix": [
+        "appleicloud.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
         "appleid-applemx.com"
       ]
     },
@@ -5769,6 +5779,11 @@
     {
       "domain_suffix": [
         "appleid.hk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "applemx-icloud.com"
       ]
     },
     {
@@ -6008,7 +6023,222 @@
     },
     {
       "domain_suffix": [
+        "icloud-apple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-content.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-isupport.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud-sandbox.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ch"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.com.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ee"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.fi"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.fr"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.hu"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ie"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.is"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.lv"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.net.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.om"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.org"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.pt"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.ro"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.se"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.si"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.sk"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloud.vn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudads.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudapple.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudbox.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudbrowser.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloude.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudhome.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudmail.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudmusic.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudnet.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudo.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudo.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudo.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudos.de"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudos.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudpay.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudsecure.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "icloudsetup.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "ids-apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ios-icloud.com"
       ]
     },
     {
@@ -6178,12 +6408,32 @@
     },
     {
       "domain_suffix": [
+        "me.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "myappleid.com"
       ]
     },
     {
       "domain_suffix": [
+        "myicloud.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "mylcloud.net"
+      ]
+    },
+    {
+      "domain_suffix": [
         "tvappstore.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "wwwicloud.com"
       ]
     },
     {
@@ -7328,11 +7578,6 @@
     },
     {
       "domain_suffix": [
-        "apple.news"
-      ]
-    },
-    {
-      "domain_suffix": [
         "appleenews.com"
       ]
     },
@@ -7344,11 +7589,6 @@
     {
       "domain_suffix": [
         "applemusic.co"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "applemusic.com"
       ]
     },
     {
@@ -7513,7 +7753,22 @@
     },
     {
       "domain_suffix": [
+        "applemusic.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "apple-dns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.news"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "cdn-apple.com"
       ]
     },
     {
@@ -7528,22 +7783,7 @@
     },
     {
       "domain_suffix": [
-        "apple-icloud.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
         "apple-livephotoskit.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "appleicloud.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "applemx-icloud.com"
       ]
     },
     {
@@ -7553,252 +7793,12 @@
     },
     {
       "domain_suffix": [
-        "cdn-apple.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud-apple.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud-content.com"
-      ]
-    },
-    {
-      "domain_suffix": [
         "icloud-content.com.cn"
       ]
     },
     {
       "domain_suffix": [
-        "icloud-isupport.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud-sandbox.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.ch"
-      ]
-    },
-    {
-      "domain_suffix": [
         "icloud.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.com.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.de"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.ee"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.fi"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.fr"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.hu"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.ie"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.is"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.jp"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.lv"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.net.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.om"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.org"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.pt"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.ro"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.se"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.si"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.sk"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloud.vn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudads.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudapple.cn"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudbox.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudbrowser.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloude.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudhome.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudmail.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudmusic.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudnet.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudo.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudo.de"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudo.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudos.de"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudos.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudpay.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudsecure.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "icloudsetup.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "ios-icloud.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "me.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "myicloud.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "mylcloud.net"
-      ]
-    },
-    {
-      "domain_suffix": [
-        "wwwicloud.com"
       ]
     },
     {

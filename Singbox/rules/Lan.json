@@ -18,6 +18,16 @@
     },
     {
       "domain": [
+        "localhost.weixin.qq.com"
+      ]
+    },
+    {
+      "domain": [
+        "localhost.work.weixin.qq.com"
+      ]
+    },
+    {
+      "domain": [
         "oasisauth.h3c.com"
       ]
     },
