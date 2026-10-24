@@ -33,6 +33,11 @@
     },
     {
       "domain_suffix": [
+        "dota2.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "dota2.wmsj.cn"
       ]
     },
@@ -158,6 +163,11 @@
     },
     {
       "domain_suffix": [
+        "steamconnecttest.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "steamcontent.tnkjmec.com"
       ]
     },
@@ -248,6 +258,11 @@
     },
     {
       "domain_suffix": [
+        "valve.net"
+      ]
+    },
+    {
+      "domain_suffix": [
         "valvesoftware.com"
       ]
     },
@@ -269,6 +284,66 @@
     {
       "domain_keyword": [
         "steamuserimages"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "103.10.124.0/23"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "103.28.54.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "146.66.152.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "146.66.155.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "155.133.224.0/19"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "162.254.192.0/21"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "185.25.180.0/22"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "192.69.96.0/22"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "205.196.6.0/24"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "208.64.200.0/22"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "208.78.164.0/22"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "45.121.184.0/24"
       ]
     }
   ]
