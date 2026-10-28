@@ -5963,11 +5963,6 @@
     },
     {
       "domain_suffix": [
-        "appsto.re"
-      ]
-    },
-    {
-      "domain_suffix": [
         "appstore.co.id"
       ]
     },
@@ -7578,11 +7573,6 @@
     },
     {
       "domain_suffix": [
-        "apple.news"
-      ]
-    },
-    {
-      "domain_suffix": [
         "appleenews.com"
       ]
     },
@@ -7764,6 +7754,16 @@
     {
       "domain_suffix": [
         "apple-dns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple.news"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "appsto.re"
       ]
     },
     {
