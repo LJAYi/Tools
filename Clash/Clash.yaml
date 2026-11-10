@@ -1,5 +1,4 @@
-# Clash.Meta / Mihomo configuration
-# Replace the private subscription URL only in Clash.local.yaml.
+# Clash.Meta / Mihomo rule configuration
 
 mixed-port: 7890
 allow-lan: false
@@ -22,42 +21,25 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
 
-proxy-providers:
-  Subscription:
-    type: http
-    url: https://example.invalid/replace-with-your-private-subscription
-    path: ./providers/subscription.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 600
-
 proxy-groups:
-  - name: Proxy
-    type: select
-    use: [Subscription]
-    proxies: [DIRECT]
-  - name: Final
-    type: select
-    proxies: [Proxy, DIRECT]
-  - { name: Apple, type: select, proxies: [Proxy, DIRECT] }
-  - { name: BiliBili, type: select, proxies: [DIRECT, Proxy] }
-  - { name: Netflix, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Disney, type: select, proxies: [Proxy, DIRECT] }
-  - { name: YouTube, type: select, proxies: [Proxy, DIRECT] }
-  - { name: TikTok, type: select, proxies: [Proxy, DIRECT] }
-  - { name: GlobalMedia, type: select, proxies: [Proxy, DIRECT] }
-  - { name: OpenAI, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Claude, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Gemini, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Google, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Microsoft, type: select, proxies: [Proxy, DIRECT] }
-  - { name: PayPal, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Telegram, type: select, proxies: [Proxy, DIRECT] }
-  - { name: Steam, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Final, type: select, proxies: [DIRECT] }
+  - { name: Apple, type: select, proxies: [DIRECT] }
+  - { name: BiliBili, type: select, proxies: [DIRECT] }
+  - { name: Netflix, type: select, proxies: [DIRECT] }
+  - { name: Disney, type: select, proxies: [DIRECT] }
+  - { name: YouTube, type: select, proxies: [DIRECT] }
+  - { name: TikTok, type: select, proxies: [DIRECT] }
+  - { name: GlobalMedia, type: select, proxies: [DIRECT] }
+  - { name: OpenAI, type: select, proxies: [DIRECT] }
+  - { name: Claude, type: select, proxies: [DIRECT] }
+  - { name: Gemini, type: select, proxies: [DIRECT] }
+  - { name: Google, type: select, proxies: [DIRECT] }
+  - { name: Microsoft, type: select, proxies: [DIRECT] }
+  - { name: PayPal, type: select, proxies: [DIRECT] }
+  - { name: Telegram, type: select, proxies: [DIRECT] }
+  - { name: Steam, type: select, proxies: [DIRECT] }
   - { name: Lan, type: select, proxies: [DIRECT] }
-  - { name: China, type: select, proxies: [DIRECT, Proxy] }
+  - { name: China, type: select, proxies: [DIRECT] }
 
 x-rule-provider: &rule-provider
   type: http
