@@ -1,486 +1,160 @@
-# =========================================================
-# Clash / Clash.Meta 配置（Clash Verge | 5个订阅 | 组内 filter）
-# Date: 2025-09-14
-# =========================================================
+# Clash.Meta / Mihomo configuration
+# Replace the private subscription URL only in Clash.local.yaml.
 
-# ---- 基本设置 ----
 mixed-port: 7890
-port: 7222
-socks-port: 7221
 allow-lan: false
 bind-address: 127.0.0.1
 mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
+
 profile:
   store-selected: true
-  tracing: true
+  store-fake-ip: true
 
-# ---- TUN（bypass-dst）----
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - any:53
-  bypass-dst:
-    - 10.0.0.0/8
-    - 100.64.0.0/10
-    - 127.0.0.0/8
-    - 169.254.0.0/16
-    - 172.16.0.0/12
-    - 192.0.0.0/24
-    - 192.0.2.0/24
-    - 192.88.99.0/24
-    - 192.168.0.0/16
-    - 198.51.100.0/24
-    - 203.0.113.0/24
-    - 224.0.0.0/4
-    - 255.255.255.255/32
-
-# ---- DNS ----
 dns:
   enable: true
   ipv6: false
-  prefer-h3: false
-  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
   default-nameserver: [223.5.5.5, 1.1.1.1]
-  nameserver: [223.5.5.5, 119.29.29.29]
-  fallback: [1.1.1.1, 8.8.8.8]
-  fallback-filter:
-    geoip: false
-    ipcidr: [240.0.0.0/4]
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 
-# =========================================================
-# 5 个订阅（替换为你的真实 URL）
-# =========================================================
 proxy-providers:
-  sub_a:
+  Subscription:
     type: http
-    url: https://SUB_A.example.com/clash      # ← 订阅 A
-    path: ./providers/a.yaml
+    url: https://example.invalid/replace-with-your-private-subscription
+    path: ./providers/subscription.yaml
     interval: 3600
-    health-check: { enable: true, url: http://www.gstatic.com/generate_204, interval: 600 }
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 600
 
-  sub_b:
-    type: http
-    url: https://SUB_B.example.com/clash      # ← 订阅 B
-    path: ./providers/b.yaml
-    interval: 3600
-    health-check: { enable: true, url: http://www.gstatic.com/generate_204, interval: 600 }
-
-  sub_c:
-    type: http
-    url: https://SUB_C.example.com/clash      # ← 订阅 C
-    path: ./providers/c.yaml
-    interval: 3600
-    health-check: { enable: true, url: http://www.gstatic.com/generate_204, interval: 600 }
-
-  sub_d:
-    type: http
-    url: https://SUB_D.example.com/clash      # ← 订阅 D
-    path: ./providers/d.yaml
-    interval: 3600
-    health-check: { enable: true, url: http://www.gstatic.com/generate_204, interval: 600 }
-
-  sub_e:
-    type: http
-    url: https://SUB_E.example.com/clash      # ← 订阅 E
-    path: ./providers/e.yaml
-    interval: 3600
-    health-check: { enable: true, url: http://www.gstatic.com/generate_204, interval: 600 }
-
-# 为了少打字，后面统一用这个列表
-x-pp: &ALL_PROVIDERS [sub_a, sub_b, sub_c, sub_d, sub_e]
-
-# =========================================================
-# 分组（全部从 5 个 provider 汇总，组内用 filter 分区）
-# =========================================================
 proxy-groups:
-  # —— 顶层总开关 —— 
-  - name: 场景选择
+  - name: Proxy
     type: select
-    proxies:
-      - 大陆场景
-      - 香港场景
-      - 台湾场景
-      - 日本场景
-      - 韩国场景
-      - 新国场景
-      - 美国场景
-      - 全球场景
-
-  # —— 每个地区“场景” —— 
-  - name: 大陆场景
-    type: select
-    proxies: [大陆时延优选, 大陆故障转移, 大陆负载均衡, DIRECT, 大陆节点]
-  - name: 香港场景
-    type: select
-    proxies: [香港时延优选, 香港故障转移, 香港负载均衡, DIRECT, 香港节点]
-  - name: 台湾场景
-    type: select
-    proxies: [台湾时延优选, 台湾故障转移, 台湾负载均衡, DIRECT, 台湾节点]
-  - name: 日本场景
-    type: select
-    proxies: [日本时延优选, 日本故障转移, 日本负载均衡, DIRECT, 日本节点]
-  - name: 韩国场景
-    type: select
-    proxies: [韩国时延优选, 韩国故障转移, 韩国负载均衡, DIRECT, 韩国节点]
-  - name: 新国场景
-    type: select
-    proxies: [新国时延优选, 新国故障转移, 新国负载均衡, DIRECT, 新国节点]
-  - name: 美国场景
-    type: select
-    proxies: [美国时延优选, 美国故障转移, 美国负载均衡, DIRECT, 美国节点]
-  - name: 全球场景
-    type: select
-    proxies: [DIRECT, 全球节点]
-
-  # —— 手选池（各地区节点池）——
-  - name: 大陆节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇨🇳|中国|回国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-
-  - name: 香港节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇭🇰|香港|\\b(HK|HKG|Hong)\\d*\\b"
-
-  - name: 台湾节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇹🇼|台湾|\\b(TW|TWN|Taiwan|Tai)\\d*\\b"
-
-  - name: 日本节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇯🇵|日本|东京|大阪|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-
-  - name: 韩国节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇰🇷|韩国|韓|首尔|\\b(KR|KOR|Korea)\\d*\\b"
-
-  - name: 新国节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇸🇬|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-
-  - name: 美国节点
-    type: select
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|硅谷|达拉斯|西雅图|芝加哥|波特兰|凤凰城|\\b(US|USA|United States)\\d*\\b"
-
-  - name: 全球节点
-    type: select
-    use: *ALL_PROVIDERS
+    use: [Subscription]
     proxies: [DIRECT]
+  - name: Final
+    type: select
+    proxies: [Proxy, DIRECT]
+  - { name: Apple, type: select, proxies: [Proxy, DIRECT] }
+  - { name: BiliBili, type: select, proxies: [DIRECT, Proxy] }
+  - { name: Netflix, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Disney, type: select, proxies: [Proxy, DIRECT] }
+  - { name: YouTube, type: select, proxies: [Proxy, DIRECT] }
+  - { name: TikTok, type: select, proxies: [Proxy, DIRECT] }
+  - { name: GlobalMedia, type: select, proxies: [Proxy, DIRECT] }
+  - { name: OpenAI, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Claude, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Gemini, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Google, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Microsoft, type: select, proxies: [Proxy, DIRECT] }
+  - { name: PayPal, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Telegram, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Steam, type: select, proxies: [Proxy, DIRECT] }
+  - { name: Lan, type: select, proxies: [DIRECT] }
+  - { name: China, type: select, proxies: [DIRECT, Proxy] }
 
-  # —— 自动策略（测速 / 故障转移 / 负载均衡）——
-  - name: 大陆时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇨🇳|中国|回国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
+x-rule-provider: &rule-provider
+  type: http
+  behavior: classical
+  interval: 86400
 
-  - name: 香港时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇭🇰|香港|\\b(HK|HKG|Hong)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
-
-  - name: 台湾时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇹🇼|台湾|\\b(TW|TWN|Taiwan|Tai)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
-
-  - name: 日本时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇯🇵|日本|东京|大阪|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
-
-  - name: 韩国时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇰🇷|韩国|韓|首尔|\\b(KR|KOR|Korea)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
-
-  - name: 新国时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇸🇬|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
-
-  - name: 美国时延优选
-    type: url-test
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|硅谷|达拉斯|西雅图|芝加哥|波特兰|凤凰城|\\b(US|USA|United States)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 50
-
-  - name: 大陆故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇨🇳|中国|回国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 香港故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇭🇰|香港|\\b(HK|HKG|Hong)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 台湾故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇹🇼|台湾|\\b(TW|TWN|Taiwan|Tai)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 日本故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇯🇵|日本|东京|大阪|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 韩国故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇰🇷|韩国|韓|首尔|\\b(KR|KOR|Korea)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 新国故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇸🇬|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 美国故障转移
-    type: fallback
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|硅谷|达拉斯|西雅图|芝加哥|波特兰|凤凰城|\\b(US|USA|United States)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-  - name: 大陆负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇨🇳|中国|回国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  - name: 香港负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇭🇰|香港|\\b(HK|HKG|Hong)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  - name: 台湾负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇹🇼|台湾|\\b(TW|TWN|Taiwan|Tai)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  - name: 日本负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇯🇵|日本|东京|大阪|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  - name: 韩国负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇰🇷|韩国|韓|首尔|\\b(KR|KOR|Korea)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  - name: 新国负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇸🇬|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  - name: 美国负载均衡
-    type: load-balance
-    use: *ALL_PROVIDERS
-    filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|硅谷|达拉斯|西雅图|芝加哥|波特兰|凤凰城|\\b(US|USA|United States)\\d*\\b"
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    strategy: consistent-hashing
-
-  # —— 兜底后备策略 —— 
-  - name: 兜底后备策略
-    type: fallback
-    proxies:
-      - 香港时延优选
-      - 台湾时延优选
-      - 日本时延优选
-      - 韩国时延优选
-      - 新国时延优选
-      - 美国时延优选
-      - 大陆时延优选
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-
-# =========================================================
-# 规则提供者（你可按喜好替换为 Loyalsoldier/ACL4SSR 等）
-# =========================================================
 rule-providers:
-  LAN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-    path: ./ruleset/lan.yaml
-    interval: 86400
-  Telegram:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
-    path: ./ruleset/telegram.yaml
-    interval: 86400
-  TikTok:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
-    path: ./ruleset/tiktok.yaml
-    interval: 86400
-  OpenAI:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
-    path: ./ruleset/openai.yaml
-    interval: 86400
-  Speedtest:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
-    path: ./ruleset/speedtest.yaml
-    interval: 86400
+  WeChat:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
+    path: ./ruleset/WeChat.yaml
   Apple:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
-    path: ./ruleset/apple.yaml
-    interval: 86400
-  GitHub:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
-    path: ./ruleset/github.yaml
-    interval: 86400
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml
+    path: ./ruleset/Apple.yaml
+  BiliBili:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili_No_Resolve.yaml
+    path: ./ruleset/BiliBili.yaml
   Netflix:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
-    path: ./ruleset/netflix.yaml
-    interval: 86400
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix_No_Resolve.yaml
+    path: ./ruleset/Netflix.yaml
+  Disney:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Disney/Disney_No_Resolve.yaml
+    path: ./ruleset/Disney.yaml
   YouTube:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
-    path: ./ruleset/youtube.yaml
-    interval: 86400
-  DisneyPlus:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
-    path: ./ruleset/disney.yaml
-    interval: 86400
-  Twitter:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
-    path: ./ruleset/twitter.yaml
-    interval: 86400
-  Facebook:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
-    path: ./ruleset/facebook.yaml
-    interval: 86400
-  Instagram:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml
-    path: ./ruleset/instagram.yaml
-    interval: 86400
-  Spotify:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
-    path: ./ruleset/spotify.yaml
-    interval: 86400
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml
+    path: ./ruleset/YouTube.yaml
+  TikTok:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/TikTok/TikTok_No_Resolve.yaml
+    path: ./ruleset/TikTok.yaml
+  GlobalMedia:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml
+    path: ./ruleset/GlobalMedia.yaml
+  OpenAI:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml
+    path: ./ruleset/OpenAI.yaml
+  Claude:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude_No_Resolve.yaml
+    path: ./ruleset/Claude.yaml
+  Gemini:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
+    path: ./ruleset/Gemini.yaml
   Google:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
-    path: ./ruleset/google.yaml
-    interval: 86400
-  OneDrive:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
-    path: ./ruleset/onedrive.yaml
-    interval: 86400
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google_No_Resolve.yaml
+    path: ./ruleset/Google.yaml
+  Microsoft:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml
+    path: ./ruleset/Microsoft.yaml
+  PayPal:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/PayPal/PayPal_No_Resolve.yaml
+    path: ./ruleset/PayPal.yaml
+  Telegram:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram_No_Resolve.yaml
+    path: ./ruleset/Telegram.yaml
+  Steam:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam_No_Resolve.yaml
+    path: ./ruleset/Steam.yaml
+  Lan:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan_No_Resolve.yaml
+    path: ./ruleset/Lan.yaml
+  ChinaMax:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaMax/ChinaMax_Classical_No_IPv6_No_Resolve.yaml
+    path: ./ruleset/ChinaMax.yaml
 
-# =========================================================
-# 规则（对应你的策略绑定）
-# =========================================================
 rules:
-  - RULE-SET,LAN,DIRECT
-  - IP-CIDR,28.0.0.1/8,DIRECT,no-resolve
-  - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
-  - IP-CIDR,198.18.0.0/15,DIRECT,no-resolve
-  - IP-CIDR6,fc00::/18,DIRECT,no-resolve
-
-  - RULE-SET,Telegram,兜底后备策略
-  - RULE-SET,TikTok,新国场景
-  - RULE-SET,OpenAI,新国场景
-  - RULE-SET,Speedtest,全球场景
-  - RULE-SET,Apple,DIRECT
-  - RULE-SET,GitHub,兜底后备策略
-  - RULE-SET,Netflix,新国场景
-  - RULE-SET,YouTube,兜底后备策略
-  - RULE-SET,DisneyPlus,兜底后备策略
-  - RULE-SET,Twitter,场景选择
-  - RULE-SET,Facebook,场景选择
-  - RULE-SET,Instagram,场景选择
-  - RULE-SET,Spotify,兜底后备策略
-  - RULE-SET,Google,场景选择
-  - RULE-SET,OneDrive,兜底后备策略
-
-  - GEOIP,CN,DIRECT
-  - MATCH,兜底后备策略
+  - RULE-SET,WeChat,DIRECT
+  - RULE-SET,Apple,Apple
+  - RULE-SET,BiliBili,BiliBili
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Disney,Disney
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,TikTok,TikTok
+  - RULE-SET,GlobalMedia,GlobalMedia
+  - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,Claude,Claude
+  - RULE-SET,Gemini,Gemini
+  - RULE-SET,Google,Google
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,PayPal,PayPal
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Steam,Steam
+  - RULE-SET,Lan,Lan
+  - RULE-SET,ChinaMax,China
+  - MATCH,Final
