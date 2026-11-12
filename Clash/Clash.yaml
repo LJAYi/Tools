@@ -22,24 +22,26 @@ dns:
     - https://doh.pub/dns-query
 
 proxy-groups:
-  - { name: Final, type: select, proxies: [DIRECT] }
-  - { name: Apple, type: select, proxies: [DIRECT] }
-  - { name: BiliBili, type: select, proxies: [DIRECT] }
-  - { name: Netflix, type: select, proxies: [DIRECT] }
-  - { name: Disney, type: select, proxies: [DIRECT] }
-  - { name: YouTube, type: select, proxies: [DIRECT] }
-  - { name: TikTok, type: select, proxies: [DIRECT] }
-  - { name: GlobalMedia, type: select, proxies: [DIRECT] }
-  - { name: OpenAI, type: select, proxies: [DIRECT] }
-  - { name: Claude, type: select, proxies: [DIRECT] }
-  - { name: Gemini, type: select, proxies: [DIRECT] }
-  - { name: Google, type: select, proxies: [DIRECT] }
-  - { name: Microsoft, type: select, proxies: [DIRECT] }
-  - { name: PayPal, type: select, proxies: [DIRECT] }
-  - { name: Telegram, type: select, proxies: [DIRECT] }
-  - { name: Steam, type: select, proxies: [DIRECT] }
-  - { name: Lan, type: select, proxies: [DIRECT] }
-  - { name: China, type: select, proxies: [DIRECT] }
+  # include-all automatically includes locally added nodes and provider nodes.
+  - { name: Proxy, type: select, proxies: [DIRECT], include-all: true }
+  - { name: Final, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Apple, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: BiliBili, type: select, proxies: [DIRECT, Proxy], include-all: true }
+  - { name: Netflix, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Disney, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: YouTube, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: TikTok, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: GlobalMedia, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: OpenAI, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Claude, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Gemini, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Google, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Microsoft, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: PayPal, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Telegram, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Steam, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: Lan, type: select, proxies: [DIRECT, Proxy], include-all: true }
+  - { name: China, type: select, proxies: [DIRECT, Proxy], include-all: true }
 
 x-rule-provider: &rule-provider
   type: http
