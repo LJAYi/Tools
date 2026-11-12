@@ -34,9 +34,7 @@ sniffer:
 proxy-groups:
 - name: 场景选择
   type: select
-  include-all: true
-  filter: ".+"
-  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-"
   proxies:
   - 美国场景
   - 大陆场景
@@ -44,7 +42,6 @@ proxy-groups:
   - 日本场景
   - 新国场景
   - 全球场景
-  - DIRECT
   icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 - name: 美国场景
   type: select

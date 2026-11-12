@@ -41,7 +41,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 
 [Proxy Group]
 # 场景选择
-场景选择 = select,美国场景,大陆场景,香港场景,日本场景,新国场景,全球场景,DIRECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+场景选择 = select,美国场景,大陆场景,香港场景,日本场景,新国场景,全球场景,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 美国场景 = select,美国时延优选,美国故障转移,美国负载均衡,DIRECT,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 大陆场景 = select,大陆时延优选,大陆故障转移,大陆负载均衡,DIRECT,大陆节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/CN.png
 香港场景 = select,香港时延优选,香港故障转移,香港负载均衡,DIRECT,香港节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
