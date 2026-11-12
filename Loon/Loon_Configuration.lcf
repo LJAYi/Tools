@@ -40,8 +40,8 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 全球节点 = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
 
 [Proxy Group]
-# Proxy
-Proxy = select,美国场景,大陆场景,香港场景,日本场景,新国场景,全球场景,DIRECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+# 场景选择
+场景选择 = select,美国场景,大陆场景,香港场景,日本场景,新国场景,全球场景,DIRECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 美国场景 = select,美国时延优选,美国故障转移,美国负载均衡,DIRECT,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 大陆场景 = select,大陆时延优选,大陆故障转移,大陆负载均衡,DIRECT,大陆节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/CN.png
 香港场景 = select,香港时延优选,香港故障转移,香港负载均衡,DIRECT,香港节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
@@ -72,12 +72,12 @@ Proxy = select,美国场景,大陆场景,香港场景,日本场景,新国场景,
 新国负载均衡 = load-balance,新国节点,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 
 # 兜底后备策略
-兜底后备策略 = select,DIRECT,Proxy,全球故障转移,美国时延优选,香港时延优选,日本时延优选,新国时延优选,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+兜底后备策略 = select,DIRECT,场景选择,全球故障转移,美国时延优选,香港时延优选,日本时延优选,新国时延优选,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 
 [Rule]
 # Local Rule
 # Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR,IP-CIDR6,IP-ASN
-# Strategy:DIRECT,Proxy,REJECT
+# Strategy:DIRECT,场景选择,REJECT
 # Options:no-resolve(no-resolve(only for cidr))
 # IP-CIDR, 192.168.0.0/16, DIRECT
 # IP-CIDR, 10.0.0.0/8, DIRECT
@@ -105,9 +105,9 @@ https://rule.kelee.one/Loon/GitHub.lsr, policy=全球故障转移, tag=GitHub, e
 https://rule.kelee.one/Loon/Netflix.lsr, policy=新国场景, tag=Netflix, enabled=true
 https://rule.kelee.one/Loon/YouTube.lsr, policy=美国场景, tag=Youtube, enabled=true
 https://rule.kelee.one/Loon/Disney.lsr, policy=全球故障转移, tag=Disney, enabled=true
-https://rule.kelee.one/Loon/Twitter.lsr, policy=Proxy, tag=Twitter, enabled=true
-https://rule.kelee.one/Loon/Facebook.lsr, policy=Proxy, tag=Facebook, enabled=true
-https://rule.kelee.one/Loon/Instagram.lsr, policy=Proxy, tag=Instagram, enabled=true
+https://rule.kelee.one/Loon/Twitter.lsr, policy=场景选择, tag=Twitter, enabled=true
+https://rule.kelee.one/Loon/Facebook.lsr, policy=场景选择, tag=Facebook, enabled=true
+https://rule.kelee.one/Loon/Instagram.lsr, policy=场景选择, tag=Instagram, enabled=true
 https://rule.kelee.one/Loon/Spotify.lsr, policy=全球故障转移, tag=Spotify, enabled=true
 https://rule.kelee.one/Loon/Google.lsr, policy=美国场景, tag=Google, enabled=true
 https://rule.kelee.one/Loon/OneDrive.lsr, policy=全球故障转移, tag=OneDrive, enabled=true

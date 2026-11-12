@@ -32,7 +32,7 @@ sniffer:
       - 80
       - 8080-8880
 proxy-groups:
-- name: Proxy
+- name: 场景选择
   type: select
   include-all: true
   filter: ".+"
@@ -274,7 +274,7 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - Proxy
+  - 场景选择
   - 全球故障转移
   - 美国时延优选
   - 香港时延优选
@@ -678,9 +678,9 @@ rules:
 - RULE-SET,Netflix,新国场景
 - RULE-SET,YouTube,美国场景
 - RULE-SET,Disney,全球故障转移
-- RULE-SET,Twitter,Proxy
-- RULE-SET,Facebook,Proxy
-- RULE-SET,Instagram,Proxy
+- RULE-SET,Twitter,场景选择
+- RULE-SET,Facebook,场景选择
+- RULE-SET,Instagram,场景选择
 - RULE-SET,Spotify,全球故障转移
 - RULE-SET,Google,美国场景
 - RULE-SET,OneDrive,全球故障转移

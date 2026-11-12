@@ -7,7 +7,7 @@ https://raw.githubusercontent.com/LJAYi/Tools/main/Clash/Loon_Configuration.yaml
 ```
 
 - 策略组依次排列场景选择、时延优选、故障转移，再保留负载均衡和兜底策略；各部分地区按美国、大陆、香港、日本、新国排列，另保留全球场景。
-- `Proxy` 为总选择入口，包含各地区场景、`DIRECT` 和本地节点。地区场景包含对应地区的具体节点、自动策略和 `DIRECT`；通过 `include-all`、`filter`、`exclude-filter` 筛选节点，不额外生成地区节点策略组。
+- `场景选择` 为总选择入口，包含各地区场景、`DIRECT` 和本地节点。地区场景包含对应地区的具体节点、自动策略和 `DIRECT`；通过 `include-all`、`filter`、`exclude-filter` 筛选节点，不额外生成地区节点策略组。
 - 不包含订阅或节点占位符。需在客户端本地合并节点或 provider；空节点池不能用于代理访问。规则每 24 小时更新。
 - 应用规则用 BlackMatrix 对应 Clash YAML 替换 Kelee Loon 规则，覆盖范围不完全相同。`AI` 拆为 OpenAI、Claude、Gemini；`AppleAccount` 对应 AppleID；国际测速对应 Speedtest；LAN 和大陆区域对应 Lan 和 ChinaMax。
 - 金融机构只作为独立规则集，不生成机构策略组；美国金融规则指向美国场景，HSBC Reward+ 指向香港场景，HSBC 和 CNCBI 保持直连。金融规则直接使用仓库的原始 `.list`，Mihomo 按 `format: text` 读取，置于应用和大陆大类规则之前；HSBC Reward+ 仍先于 HSBC。
