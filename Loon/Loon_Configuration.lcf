@@ -114,32 +114,32 @@ https://rule.kelee.one/Loon/OneDrive.lsr, policy=全球故障转移, tag=OneDriv
 https://rule.kelee.one/Loon/LinkedIn.lsr, policy=新国场景, tag=LinkedIn.lsr, enabled=true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=大陆场景, tag=CN REGION, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/HKBanks/HSBCReward.list, policy=香港场景, tag=HSBC Reward+, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/HKBanks/HSBCReward.list, policy=DIRECT, tag=HSBC Reward+, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/HKBanks/HSBC.list, policy=DIRECT, tag=HSBC, enabled=true
 https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/HKBanks/CNCBI.list, policy=DIRECT, tag=CNCBI, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/CapitalOne.list, policy=美国场景, tag=Capital One, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/AmexUS.list, policy=美国场景, tag=Amex US, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Chase.list, policy=美国场景, tag=Chase, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/BankOfAmerica.list, policy=美国场景, tag=Bank of America, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Citi.list, policy=美国场景, tag=Citi, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Discover.list, policy=美国场景, tag=Discover, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/WellsFargo.list, policy=美国场景, tag=Wells Fargo, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/USBank.list, policy=美国场景, tag=US Bank, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/PNC.list, policy=美国场景, tag=PNC, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Truist.list, policy=美国场景, tag=Truist, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/Payments/Zelle.list, policy=美国场景, tag=Zelle, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Schwab.list, policy=美国场景, tag=Schwab, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Fidelity.list, policy=美国场景, tag=Fidelity, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/IBKR.list, policy=美国场景, tag=IBKR, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Vanguard.list, policy=美国场景, tag=Vanguard, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/MorganStanleyETrade.list, policy=美国场景, tag=Morgan Stanley ETrade, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Merrill.list, policy=美国场景, tag=Merrill, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Robinhood.list, policy=美国场景, tag=Robinhood, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Webull.list, policy=美国场景, tag=Webull, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/Experian.list, policy=美国场景, tag=Experian, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/Equifax.list, policy=美国场景, tag=Equifax, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/TransUnion.list, policy=美国场景, tag=TransUnion, enabled=true
-https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/CreditReports.list, policy=美国场景, tag=Credit Reports, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/CapitalOne.list, policy=DIRECT, tag=Capital One, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/AmexUS.list, policy=DIRECT, tag=Amex US, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Chase.list, policy=DIRECT, tag=Chase, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/BankOfAmerica.list, policy=DIRECT, tag=Bank of America, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Citi.list, policy=DIRECT, tag=Citi, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Discover.list, policy=DIRECT, tag=Discover, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/WellsFargo.list, policy=DIRECT, tag=Wells Fargo, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/USBank.list, policy=DIRECT, tag=US Bank, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/PNC.list, policy=DIRECT, tag=PNC, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBanks/Truist.list, policy=DIRECT, tag=Truist, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/Payments/Zelle.list, policy=DIRECT, tag=Zelle, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Schwab.list, policy=DIRECT, tag=Schwab, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Fidelity.list, policy=DIRECT, tag=Fidelity, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/IBKR.list, policy=DIRECT, tag=IBKR, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Vanguard.list, policy=DIRECT, tag=Vanguard, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/MorganStanleyETrade.list, policy=DIRECT, tag=Morgan Stanley ETrade, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Merrill.list, policy=DIRECT, tag=Merrill, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Robinhood.list, policy=DIRECT, tag=Robinhood, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USBrokerages/Webull.list, policy=DIRECT, tag=Webull, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/Experian.list, policy=DIRECT, tag=Experian, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/Equifax.list, policy=DIRECT, tag=Equifax, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/TransUnion.list, policy=DIRECT, tag=TransUnion, enabled=true
+https://raw.githubusercontent.com/LJAYi/Tools/main/Rule/Finance/USCredit/CreditReports.list, policy=DIRECT, tag=Credit Reports, enabled=true
 
 [Host]
 
