@@ -36,6 +36,7 @@ proxy-groups:
   - { name: Claude, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: Gemini, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: Google, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: GitHub, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: Microsoft, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: PayPal, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: Telegram, type: select, proxies: [Proxy, DIRECT], include-all: true }
@@ -101,6 +102,10 @@ rule-providers:
     <<: *rule-provider
     url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml
     path: ./ruleset/Microsoft.yaml
+  GitHub:
+    <<: *rule-provider
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub_No_Resolve.yaml
+    path: ./ruleset/GitHub.yaml
   PayPal:
     <<: *rule-provider
     url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/PayPal/PayPal_No_Resolve.yaml
@@ -135,6 +140,7 @@ rules:
   - RULE-SET,Claude,Claude
   - RULE-SET,Gemini,Gemini
   - RULE-SET,Google,Google
+  - RULE-SET,GitHub,GitHub
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Telegram,Telegram
