@@ -17,39 +17,30 @@ end
 patterns = {
   '大陆' => '(?i)🇨🇳|回国|中国|上海|广州|北京|\b(CN|China)\d*\b',
   '香港' => '(?i)🇭🇰|香港|\b(HK|HKG|Hong)\d*\b',
-  '台湾' => '(?i)🇹🇼|台湾|台灣|\b(TW|TWN|Tai|Taiwan)\d*\b',
   '日本' => '(?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|\b(JP|JPN|Japan)\d*\b',
-  '韩国' => '(?i)🇰🇷|韩国|韓|首尔|\b(KR|KOR|Korea)\d*\b',
   '新国' => '(?i)🇸🇬|新加坡|狮|\b(SG|SGP|Singapore)\d*\b',
   '美国' => '(?i)🇺🇸|🇺🇲|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\b(US|USA|United States)\d*\b',
   '游戏' => '(?i)游戏|🎮|\bGAME\d*\b',
   '全球' => '.+'
 }
 noise = '(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\b'
-groups = [{ 'name' => 'Proxy', 'type' => 'select', 'proxies' => ['DIRECT'], 'include-all' => true, 'exclude-filter' => noise }]
-patterns.each do |region, pattern|
+node_filters = patterns.to_h do |region, pattern|
   exclude = ['大陆', '全球'].include?(region) ? noise : "#{noise}|回国|校园"
   exclude += '|(?i)游戏|🎮|\bGAME\b' unless region == '游戏' || ['大陆', '全球'].include?(region)
-  groups << { 'name' => "#{region}节点", 'type' => 'select', 'include-all' => true,
-              'filter' => pattern, 'exclude-filter' => exclude }
+  ["#{region}节点", { 'include-all' => true, 'filter' => pattern, 'exclude-filter' => exclude }]
 end
+groups = []
 sections['Proxy Group'].each do |line|
   name, value = line.split(/\s*=\s*/, 2)
   parts = value.split(',').map(&:strip)
   type = parts.shift
   members = parts.take_while { |part| !part.include?('=') }
   group = { 'name' => name, 'type' => type }
-  if type != 'select' && members.length == 1 && members.first.end_with?('节点')
-    region = members.first.delete_suffix('节点')
-    node_group = groups.find { |g| g['name'] == members.first }
-    group.merge!(node_group.select { |k, _| ['include-all', 'filter', 'exclude-filter'].include?(k) })
-  else
-    group['proxies'] = members
-  end
-  if type == 'select'
-    group['include-all'] = true
-    group['proxies'] << 'Proxy' unless group['proxies'].include?('Proxy')
-  else
+  node_members, policies = members.partition { |member| node_filters.key?(member) }
+  abort "Multiple node filters in #{name}" if node_members.length > 1
+  group.merge!(node_filters.fetch(node_members.first)) unless node_members.empty?
+  group['proxies'] = policies unless policies.empty?
+  if type != 'select'
     group.merge!('url' => 'https://www.gstatic.com/generate_204', 'interval' => 60, 'timeout' => 2000)
     group['tolerance'] = 50 if type == 'url-test'
     group['strategy'] = 'consistent-hashing' if type == 'load-balance'
@@ -87,6 +78,7 @@ names = groups.map { |group| group['name'] }
 abort 'Duplicate policy group names' unless names.uniq == names
 groups.each do |group|
   (group['proxies'] || []).each do |member|
+    abort "Self-referencing policy: #{member}" if member == group['name']
     abort "Unknown policy: #{member}" unless names.include?(member) || member == 'DIRECT'
   end
 end
