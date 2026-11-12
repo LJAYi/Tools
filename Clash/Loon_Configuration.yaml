@@ -36,7 +36,7 @@ proxy-groups:
   type: select
   include-all: true
   filter: ".+"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
   proxies:
   - 美国场景
   - 大陆场景
@@ -51,7 +51,7 @@ proxy-groups:
   include-all: true
   filter: "(?i)\U0001F1FA\U0001F1F8|\U0001F1FA\U0001F1F2|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\b(US|USA|United
     States)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   proxies:
   - 美国时延优选
   - 美国故障转移
@@ -62,7 +62,7 @@ proxy-groups:
   type: select
   include-all: true
   filter: "(?i)\U0001F1E8\U0001F1F3|回国|中国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
   proxies:
   - 大陆时延优选
   - 大陆故障转移
@@ -73,7 +73,7 @@ proxy-groups:
   type: select
   include-all: true
   filter: "(?i)\U0001F1ED\U0001F1F0|香港|\\b(HK|HKG|Hong)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   proxies:
   - 香港时延优选
   - 香港故障转移
@@ -84,7 +84,7 @@ proxy-groups:
   type: select
   include-all: true
   filter: "(?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   proxies:
   - 日本时延优选
   - 日本故障转移
@@ -95,7 +95,7 @@ proxy-groups:
   type: select
   include-all: true
   filter: "(?i)\U0001F1F8\U0001F1EC|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   proxies:
   - 新国时延优选
   - 新国故障转移
@@ -106,7 +106,7 @@ proxy-groups:
   type: select
   include-all: true
   filter: ".+"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
   proxies:
   - 全球故障转移
   - DIRECT
@@ -116,7 +116,7 @@ proxy-groups:
   include-all: true
   filter: "(?i)\U0001F1FA\U0001F1F8|\U0001F1FA\U0001F1F2|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\b(US|USA|United
     States)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -126,7 +126,7 @@ proxy-groups:
   type: url-test
   include-all: true
   filter: "(?i)\U0001F1E8\U0001F1F3|回国|中国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -136,7 +136,7 @@ proxy-groups:
   type: url-test
   include-all: true
   filter: "(?i)\U0001F1ED\U0001F1F0|香港|\\b(HK|HKG|Hong)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -146,7 +146,7 @@ proxy-groups:
   type: url-test
   include-all: true
   filter: "(?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -156,7 +156,7 @@ proxy-groups:
   type: url-test
   include-all: true
   filter: "(?i)\U0001F1F8\U0001F1EC|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -167,7 +167,7 @@ proxy-groups:
   include-all: true
   filter: "(?i)\U0001F1FA\U0001F1F8|\U0001F1FA\U0001F1F2|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\b(US|USA|United
     States)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -176,7 +176,7 @@ proxy-groups:
   type: fallback
   include-all: true
   filter: "(?i)\U0001F1E8\U0001F1F3|回国|中国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -185,7 +185,7 @@ proxy-groups:
   type: fallback
   include-all: true
   filter: "(?i)\U0001F1ED\U0001F1F0|香港|\\b(HK|HKG|Hong)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -194,7 +194,7 @@ proxy-groups:
   type: fallback
   include-all: true
   filter: "(?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -203,13 +203,14 @@ proxy-groups:
   type: fallback
   include-all: true
   filter: "(?i)\U0001F1F8\U0001F1EC|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
   icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 - name: 全球故障转移
   type: fallback
+  exclude-filter: "^ts-"
   proxies:
   - 美国时延优选
   - 香港时延优选
@@ -224,7 +225,7 @@ proxy-groups:
   include-all: true
   filter: "(?i)\U0001F1FA\U0001F1F8|\U0001F1FA\U0001F1F2|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\b(US|USA|United
     States)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -234,7 +235,7 @@ proxy-groups:
   type: load-balance
   include-all: true
   filter: "(?i)\U0001F1E8\U0001F1F3|回国|中国|上海|广州|北京|\\b(CN|China)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -244,7 +245,7 @@ proxy-groups:
   type: load-balance
   include-all: true
   filter: "(?i)\U0001F1ED\U0001F1F0|香港|\\b(HK|HKG|Hong)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -254,7 +255,7 @@ proxy-groups:
   type: load-balance
   include-all: true
   filter: "(?i)\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|\\b(JP|JPN|Japan)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -264,7 +265,7 @@ proxy-groups:
   type: load-balance
   include-all: true
   filter: "(?i)\U0001F1F8\U0001F1EC|新加坡|狮|\\b(SG|SGP|Singapore)\\d*\\b"
-  exclude-filter: "(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
+  exclude-filter: "^ts-|(?i)群|邀请|返利|官网|客服|订阅|流量|到期|过期|已用|联系|邮箱|工单|教程|关注|更新|作者|超时|\\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Traffic)\\b|回国|校园|(?i)游戏|\U0001F3AE|\\bGAME\\b"
   url: https://www.gstatic.com/generate_204
   interval: 60
   timeout: 2000
@@ -272,6 +273,7 @@ proxy-groups:
   icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 - name: 兜底后备策略
   type: select
+  exclude-filter: "^ts-"
   proxies:
   - DIRECT
   - 场景选择
@@ -281,6 +283,10 @@ proxy-groups:
   - 日本时延优选
   - 新国时延优选
   icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+- name: TAILNET
+  type: select
+  include-all: true
+  filter: "^ts-"
 rule-providers:
   WeChat:
     type: http
@@ -633,6 +639,8 @@ rule-providers:
     path: "./ruleset/loon/CreditReports.list"
     interval: 86400
 rules:
+- DOMAIN-SUFFIX,ts.net,TAILNET
+- IP-CIDR,100.64.0.0/10,TAILNET,no-resolve
 - IP-CIDR,28.0.0.1/8,DIRECT
 - IP-CIDR,198.18.0.1/16,DIRECT
 - IP-CIDR,198.18.0.0/15,DIRECT

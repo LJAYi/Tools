@@ -39,6 +39,7 @@ sections['Proxy Group'].each do |line|
   node_members, policies = members.partition { |member| node_filters.key?(member) }
   abort "Multiple node filters in #{name}" if node_members.length > 1
   group.merge!(node_filters.fetch(node_members.first)) unless node_members.empty?
+  group['exclude-filter'] = ['^ts-', group['exclude-filter']].compact.join('|')
   group['proxies'] = policies unless policies.empty?
   if type != 'select'
     group.merge!('url' => 'https://www.gstatic.com/generate_204', 'interval' => 60, 'timeout' => 2000)
@@ -49,6 +50,8 @@ sections['Proxy Group'].each do |line|
   group['icon'] = icon.split('=', 2).last.strip if icon
   groups << group
 end
+groups << { 'name' => 'TAILNET', 'type' => 'select', 'include-all' => true, 'filter' => '^ts-' }
+tailnet_rules = ['DOMAIN-SUFFIX,ts.net,TAILNET', 'IP-CIDR,100.64.0.0/10,TAILNET,no-resolve']
 
 providers = {}
 finance_rules = []
@@ -95,7 +98,7 @@ config = {
              'nameserver' => ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query'] },
   'sniffer' => { 'enable' => true, 'sniff' => { 'TLS' => { 'ports' => [443] }, 'HTTP' => { 'ports' => [80, '8080-8880'] } } },
   'proxy-groups' => groups, 'rule-providers' => providers,
-  'rules' => local + finance_rules + app_rules + ['MATCH,兜底后备策略']
+  'rules' => tailnet_rules + local + finance_rules + app_rules + ['MATCH,兜底后备策略']
 }
 File.write(File.join(root, 'Clash/Loon_Configuration.yaml'),
            "# Generated from Loon/Loon_Configuration.lcf by scripts/build-loon-clash.rb\n# Requires Mihomo; see Clash/Loon_Configuration.md for adaptation details.\n" + YAML.dump(config))
