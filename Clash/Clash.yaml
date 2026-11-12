@@ -24,7 +24,10 @@ dns:
 proxy-groups:
   # include-all automatically includes locally added nodes and provider nodes.
   - { name: Proxy, type: select, proxies: [DIRECT], include-all: true }
-  - { name: Final, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - name: TAILNET
+    type: select
+    include-all: true
+    filter: "^ts-"
   - { name: WeChat, type: select, proxies: [DIRECT, Proxy], include-all: true }
   - { name: Apple, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: BiliBili, type: select, proxies: [DIRECT, Proxy], include-all: true }
@@ -129,6 +132,8 @@ rule-providers:
     path: ./ruleset/ChinaMax.yaml
 
 rules:
+  - DOMAIN-SUFFIX,ts.net,TAILNET
+  - IP-CIDR,100.64.0.0/10,TAILNET,no-resolve
   - RULE-SET,WeChat,WeChat
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
@@ -148,4 +153,4 @@ rules:
   - RULE-SET,Steam,Steam
   - RULE-SET,Lan,Lan
   - RULE-SET,ChinaMax,China
-  - MATCH,Final
+  - MATCH,DIRECT
