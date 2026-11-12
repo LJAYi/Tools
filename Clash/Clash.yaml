@@ -25,6 +25,7 @@ proxy-groups:
   # include-all automatically includes locally added nodes and provider nodes.
   - { name: Proxy, type: select, proxies: [DIRECT], include-all: true }
   - { name: Final, type: select, proxies: [Proxy, DIRECT], include-all: true }
+  - { name: WeChat, type: select, proxies: [DIRECT, Proxy], include-all: true }
   - { name: Apple, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - { name: BiliBili, type: select, proxies: [DIRECT, Proxy], include-all: true }
   - { name: Netflix, type: select, proxies: [Proxy, DIRECT], include-all: true }
@@ -128,7 +129,7 @@ rule-providers:
     path: ./ruleset/ChinaMax.yaml
 
 rules:
-  - RULE-SET,WeChat,DIRECT
+  - RULE-SET,WeChat,WeChat
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
   - RULE-SET,Netflix,Netflix
