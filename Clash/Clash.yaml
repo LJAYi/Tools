@@ -24,6 +24,7 @@ dns:
 proxy-groups:
   # include-all automatically includes locally added nodes and provider nodes.
   - { name: Proxy, type: select, proxies: [DIRECT], include-all: true }
+  - { name: Final, type: select, proxies: [Proxy, DIRECT], include-all: true }
   - name: TAILNET
     type: select
     include-all: true
@@ -153,4 +154,4 @@ rules:
   - RULE-SET,Steam,Steam
   - RULE-SET,Lan,Lan
   - RULE-SET,ChinaMax,China
-  - MATCH,DIRECT
+  - MATCH,Final
