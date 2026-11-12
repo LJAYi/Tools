@@ -1,5 +1,7 @@
 # Clash / Mihomo 配置
 
+另有 [Loon_Configuration.yaml](Loon_Configuration.yaml)：由仓库 Loon 配置转换，包含地区场景、自动策略和金融分流，详见 [转换说明](Loon_Configuration.md)。
+
 公开模板：
 
 ```text
